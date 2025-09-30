@@ -1,3 +1,5 @@
+
+<md>
 ---
 title: "test01"
 slug: "github-slugger"
@@ -57,3 +59,4 @@ void main(void)
 
 
 ![promyk](images/36-multiobudowa-6753241cb0c97.webp)
+</md>
