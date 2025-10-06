@@ -1,9 +1,9 @@
 markdown: kramdown
 highlighter: rouge
 
-title: HydeoutW
-tagline: 'A Jekyll theme'
-description: 'The Hyde theme for Jekyll, refreshed.'
+title: WKL TEAM64 
+tagline: 'Strona www instrukcji i tutoriali'
+description: 'WKL TEAM64 manuals'
 url: https://wklteam64.github.io
 baseurl: '' # <-- set to '' for root
 
@@ -13,11 +13,6 @@ author:
 
 paginate: 5
 
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
 sidebar_home_link: true
 
 show_excerpts: true
@@ -26,5 +21,11 @@ show_sidebar: true
 show_minimal: false
 
 navigation:
-  - {file: "index.html", sidebaricon: home}
+  - {file: "index.md", sidebaricon: home}
   - {file: "README.md", sidebaricon: address-card}
+
+  
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
