@@ -1,11 +1,7 @@
-
-<md>
 ---
-title: "test01"
-slug: "github-slugger"
-tags: tag1, tag2
-domain: wklteam64.hashnode.dev
-
+category: page
+title: test01
+sidebar_link: true
 ---
 
 
@@ -58,5 +54,4 @@ void main(void)
 }
 
 
-![promyk](images/36-multiobudowa-6753241cb0c97.webp)
-</md>
+<!-- ![promyk](images/36-multiobudowa-6753241cb0c97.webp) -->

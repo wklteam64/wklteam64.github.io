@@ -21,8 +21,8 @@ show_sidebar: true
 show_minimal: false
 
 navigation:
-  - {file: "index.html", title: "Strona główna", sidebaricon: home}
-  - {file: "README.md", title: "O nas",  sidebaricon: address-card}
+  #- {file: "index.html", title: "Strona główna", sidebaricon: home}
+ # - {file: "README.md", title: "O nas",  sidebaricon: address-card}
   #- {file: "kontakt.md", title: "Kontakt", sidebaricon: envelope}
 
 

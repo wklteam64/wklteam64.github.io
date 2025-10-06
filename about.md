@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: O nas
 sidebar_link: true
 ---
 
