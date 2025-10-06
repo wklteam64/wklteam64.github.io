@@ -3,7 +3,7 @@ highlighter: rouge
 
 title: WKL TEAM64 
 tagline: 'Strona www instrukcji i tutoriali'
-description: 'WKL TEAM64 manuals'
+description: 'statyczna strona www instrukcji i tutoriali'
 url: https://wklteam64.github.io
 baseurl: '' # <-- set to '' for root
 
@@ -21,11 +21,11 @@ show_sidebar: true
 show_minimal: false
 
 navigation:
-  - {file: "index.md", sidebaricon: home}
-  - {file: "README.md", sidebaricon: address-card}
+  - {file: "index.md", title: "Strona główna", sidebaricon: home}
+  - {file: "README.md", title: "O nas",  sidebaricon: address-card}
 
-  
+
 plugins:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate
+ # - jekyll-paginate
