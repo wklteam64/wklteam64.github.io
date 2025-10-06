@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
+title:            HydeoutW
 tagline:          'A Jekyll theme'
 description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
 url:              https://wklteam64.github.io
@@ -33,3 +33,17 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+#dodane
+
+show_excerpts: true             # show article excerpts instead of archive list on the home page
+show_frame: true                # display a grey frame on large screens
+show_sidebar: false             # show a sidebar instead of the usual header
+show_minimal: false             # remove all clutter
+
+#show_frame: "/assets/images/background.svg"
+
+# Menu                          # for available icons see https://fontawesome.com/v5/icons/
+
+navigation:                     # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html", sidebaricon: home}
+  - {file: "README.md", sidebaricon: address-card}
