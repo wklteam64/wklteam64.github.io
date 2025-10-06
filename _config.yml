@@ -1,49 +1,30 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 
-# Setup
-title:            HydeoutW
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://wklteam64.github.io
-baseurl:          '/hydeout'
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+title: HydeoutW
+tagline: 'A Jekyll theme'
+description: 'The Hyde theme for Jekyll, refreshed.'
+url: https://wklteam64.github.io
+baseurl: '' # <-- set to '' for root
 
 author:
-  name:           'WKL team64 '
-  url:            www.wklteam64.pl
+  name: 'WKL team64'
+  url: www.wklteam64.pl
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+paginate: 5
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
 
-# Sidebar link settings
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-#dodane
+sidebar_home_link: true
 
-show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
-show_sidebar: false             # show a sidebar instead of the usual header
-show_minimal: false             # remove all clutter
+show_excerpts: true
+show_frame: true
+show_sidebar: true
+show_minimal: false
 
-#show_frame: "/assets/images/background.svg"
-
-# Menu                          # for available icons see https://fontawesome.com/v5/icons/
-
-navigation:                     # accepts {file, title, url, icon, sidebaricon}
+navigation:
   - {file: "index.html", sidebaricon: home}
   - {file: "README.md", sidebaricon: address-card}
