@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kontakt
-sidebar_link: true
+# sidebar_link: true
 ---
 
 kontakt test

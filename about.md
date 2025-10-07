@@ -1,7 +1,7 @@
 ---
 layout: page
 title: O nas
-sidebar_link: true
+# sidebar_link: true
 ---
 
 <p class="message">
