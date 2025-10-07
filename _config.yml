@@ -13,7 +13,8 @@ author:
 
 paginate: 10
 
-sidebar_home_link: false
+sidebar_home_link: true
+sidebar_reverse: true
 
 show_excerpts: true
 show_frame: true
