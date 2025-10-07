@@ -19,7 +19,7 @@ sidebar_home_link: true
 show_excerpts: true
 show_frame: true
 show_sidebar: true
-show_minimal: false
+# show_minimal: false
 
 navigation:
   #- {file: "index.html", title: "Strona główna", sidebaricon: home}
