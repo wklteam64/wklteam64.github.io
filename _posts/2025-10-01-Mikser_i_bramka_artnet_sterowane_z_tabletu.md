@@ -10,7 +10,7 @@ author: WKL TEAM64
 
 Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdyż dla późniejszych modeli sprawa konfiguracji jest analogiczna.
 
-![mixer](/_posts/img/i-behringer-x-air-xr12.webp)
+![mixer](https://wklteam64.github.io/img/i-behringer-x-air-xr12.webp)
 *Behringer X AIR XR12*
 
  >  Instrukcja Behringer X AIR XR12/X16/XR18 [link](https://www.instrukcjaobslugipdf.pl/behringer/x-air-xr12/instrukcja) 
