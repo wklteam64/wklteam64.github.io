@@ -1,28 +1,10 @@
 ---
 layout: category
-title: Edge Case
+title: WideoPoradniki
 
 ---
 
-Sample category page. You need to create a page for each category.
-The category is inferred from the title of the page, but you can also
-specify it with the `category` attribute in the front matter.
+Wideo poradniki na serwisie Youtube:
 
-```md
----
-layout: category
-title: My Category
----
-```
-
-Or ...
-
-```md
----
-layout: category
-title: Fancy Title
-category: My Category
----
-```
-
-Posts get listed below here.
+* Konfiguracja bramki artnet Promyk 3.60 w programie QLC+ i Freestyler X2 Windows 11 [![video](https://youtu.be/9C-LrO0mqXc?si=PCHNuvivi27c3Dw3)
+*
