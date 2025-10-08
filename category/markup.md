@@ -1,6 +1,9 @@
 ---
 layout: category
-title: Markup
+title: Blogi techniczne
 ---
 
-Another sample category page.
+#### Blogi techniczne na platfornie google blogspot
+
+* **WKL TEAM64** [link](https://wklteam64.blogspot.com/)
+* **KWMATIK** [link](https://kwmatik.blogspot.com/)
