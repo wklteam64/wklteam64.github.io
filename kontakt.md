@@ -22,8 +22,13 @@ Pozwalają na szybkie i efektywne tworzenie oraz publikowanie treści, które s�
  Liczba zagadnień, zmian w tematyce systemów oświetlenia z roku na rok jest coraz większa i tradycyjne metody publikacji tutoriali i instrukcji okazały się czasochłonne 
    
 
-   >Firma **WKL TEAM64** skupia się na systemach wbudowanych, czyli :
+   > Firma **WKL TEAM64** skupia się na systemach wbudowanych, czyli :
 
    - tworzeniu oprogramowania w języku C  dla mikrokontrolerów (głównie STM32)
    - opracowaniu płytek drukowanych z montażem elementów elektronicznych, dokumentacji, certyfikacji 
-   - obudów do urządzeń elektronicznych
+   - konstruowaniu obudów do urządzeń elektronicznych w formie plików 2D(CNC), 3D(drukarka 3D)
+ - pisaniu instrukcji użytkownika dla zaprojektowanych urządzeń 
+
+> Firma nie zajmuje się takimi usługami jak prowadzeniu sklepu z elementami elektronicznymi, serwisem komputerowym, usługami typu HELPDESK, podłączaniem się oprogramowaniem typu *zdalny desktop* w celu jakichkolwiek modyfikacji na komputerze klienta.
+
+ W celu uzyskania pomocy należy skontaktować się z firmą **WKL TEAM64** za pomocą środków komunikacji podanej na stronie https://www.wklteam64.pl.  Wszelkie modyfikacje klient dokonują sam kierując się instrukcjami lub udzielonymi wskazówkami od firmy. W celu skutecznego usunięcia problemu zaleca się przekazania zrzutów ekranu z kluczowych miejsc opisanych w instrukcji. 
