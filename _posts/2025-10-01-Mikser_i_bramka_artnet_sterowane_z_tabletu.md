@@ -19,3 +19,24 @@ Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdy�
 
  W trybie **ACCES POINT (DHCPS)** urządzenie jest źródłem WI-FI z serwerem DHCP lub na złączu LAN za pomocą serwera DHCP wystawia adres IP podłączonym urządzeniom. (strona 14 instrukcji miksera)
 
+```mermaid
+flowchart RL 
+title[Diagram nr 1 Pierwsze 
+połączenie w celu 
+ konfiguracji parametrów 
+ IPv4 miksera]
+A["Mikser 
+tryb DHCPS
+adres IPv4 192.168.1.1"]
+B[[Tablet
+z aplikacją X AIR
+adres IPv4 przydzielony 
+z serwera 
+DHCP]]
+C((Wi-Fi: 
+X AIR ))
+A<-->C
+C<-->B
+
+```
+ 
