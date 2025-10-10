@@ -1,7 +1,7 @@
 ---
 layout: page
 title: O Nas
- sidebar_link: true
+sidebar_link: true
 ---
 
 <div><p>Celem tej strony jest zgromadzenie w jednym miejscu wszystkich publicznych instrukcji firmy <b>WKL TEAM64</b> w jednym miejscu oraz wykorzystanie mechanizmów tworzenia blogów w sposób szybki, zautomatyzowany i ukierunkowy na merytorykę a nie formę  </p> </div>
