@@ -21,22 +21,21 @@ Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdy�
 
 ```mermaid
 flowchart RL 
-title[Diagram nr 1 Pierwsze 
-połączenie w celu 
- konfiguracji parametrów 
- IPv4 miksera]
-A["Mikser 
+
+A[Mikser 
 tryb DHCPS
-adres IPv4 192.168.1.1"]
+adres IPv4 192.168.1.1]
 B[[Tablet
 z aplikacją X AIR
 adres IPv4 przydzielony 
 z serwera 
 DHCP]]
 C((Wi-Fi: 
-X AIR ))
+X AIR))
 A<-->C
 C<-->B
 
 ```
- 
+
+
+
