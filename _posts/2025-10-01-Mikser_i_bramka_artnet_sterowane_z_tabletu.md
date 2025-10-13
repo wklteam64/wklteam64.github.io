@@ -62,7 +62,56 @@ Przed podłączeniem należy zmienić pozycję **"WIFI CLIENT"**.
 Dla potrzeb tego przykładu wybrany został ruter firmy TPLINK ze względu na popularność, przystępne ceny oraz instrukcje w języku polskim. Także firma TPLINK udostępnia emulatory swoich produktów dzięki czemu możemy sprawdzić na ich stronie jak wygląda strona www ustawień rutera. [Emulator ruterów TPLINK](https://www.tp-link.com/pl/support/emulator/)
 
 ![setup lan tplink](https://wklteam64.github.io/img/tplinkSetupLan.webp)
-***Rysunek nr 5: Setup LAN rutera ***
+***Rysunek nr 5: Setup LAN rutera***
+
+Fabrycznie ruter tej firmy przeważnie posiada ustawiony fabrycznie adres ip : 192.168.0.1 z maską 255.255.255.0 (przeważnie jest opisane na naklejce pod spodem gdzie także znajduje login i hasło do logowania oraz nazwa jego sieci WIFI/hasło)
+
+Aby zmienić adres rutera łączymy się z nim za pomocą Wi-Fi (fabryczna nazwa sieci TPLINK) lub kabla LAN do jego złącza LAN(tryb DHCP karty sieciowej komputera) i w przeglądarce wpisuje jego adres fabryczny: 192.168.0.1 a potem fabryczne login i hasło.
+
+W zakładce ADVANCED(zaawansowane)/Network/ LAN należy zmienić na adres ==192.168.1.1== i zapisać **(save).**
+Po restarcie ruter powinien rozpocząć pracę z adresem 192.168.1.1, jeśli nie będzie on dostępny należy wyłączyć i włączyć ponownie się do sieci WIFI Tplink lub wyjąć i włożyć ponownie kabel LAN.
+
+> Zaleca się dla nowego sprzętu sieciowego zmianę haseł na własne, co nie będzie ujęte w tym tutorialu.
+
+```mermaid
+flowchart LR
+A[Mikser 
+tryb DHCP
+adres IPv4 
+192.168.1.xxx DHCP
+lub 192.168.1.2 STATIC]
+B[[Tablet
+z aplikacją X AIR
+ i DMX512 /Artnet/SACN/
+adres IPv4 przydzielony 
+z serwera 
+DHCP rutera
+IPv4 192.168.1.xxx]]
+C((Wi-Fi: 
+Tplink))
+R[ruter TPLINK z 
+serwerem DHCP
+adres
+IPv4 192.168.1.1]
+L((LAN))
+P[bramka ARTNET 
+PROMYK 3.60
+adres IPv4 192.168.1.30]
+
+
+L --> A
+R --> L
+C --> B
+R -->C
+L --> P
+
+
+
+```
+***Rysunek nr 6: Infrastruktura LAN dla układu sterowania z tableta z obsługą aplikacji miksera i aplikacji DMX512(artnet/SACN)***
+
+Dzięki takiej konfiguracji można korzystać z aplikacji DMX512 i X AIR gdzie centralnym punktem jest ruter WI-FI. Z reguły profesjonalna obsługa wymaga rozdzielenia urządzeń ale dla małych sztuk i mobilnych scen taki zestaw sprawuje się dobrze. ==Zalecana częstotliwość WI-FI to 5Ghz==.
+Kierunek strzałki pokazuje kto nadaje adres ip przy użyciu protokołu DHCP. Przy **rysunku nr 2** był to mikser, zaś docelowo jest to ruter. 
 
 
 
