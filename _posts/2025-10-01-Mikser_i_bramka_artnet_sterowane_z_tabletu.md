@@ -8,7 +8,7 @@ author: WKL TEAM64
 
 # Mikser i bramka Artnet sterowane z jednego tabletu
 
-#### Sterowanie z jednego tabletu mikserem i aplikacją dmx512 może być dla mobilnych Dj-ów bardzo wygodne. 
+ **Sterowanie z jednego tabletu mikserem i aplikacją dmx512 może być dla mobilnych Dj-ów bardzo wygodne**. 
 
 Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdyż dla późniejszych modeli sprawa konfiguracji jest analogiczna.
 
@@ -58,3 +58,21 @@ W aplikacji X AIR możemy zmienić ustawienie na DHCP lub STATIC. Docelowo głó
 ***Rysunek nr 4: Podłączenie miksera do rutera za pomocą przewodu typu patchcord LAN***
 
 Przed podłączeniem należy zmienić pozycję **"WIFI CLIENT"**. 
+
+Dla potrzeb tego przykładu wybrany został ruter firmy TPLINK ze względu na popularność, przystępne ceny oraz instrukcje w języku polskim. Także firma TPLINK udostępnia emulatory swoich produktów dzięki czemu możemy sprawdzić na ich stronie jak wygląda strona www ustawień rutera. [Emulator ruterów TPLINK](https://www.tp-link.com/pl/support/emulator/)
+
+![setup lan tplink](https://wklteam64.github.io/img/tplinkSetupLan.webp)
+***Rysunek nr 5: Setup LAN rutera ***
+
+
+
+
+
+
+
+
+
+
+
+
+
