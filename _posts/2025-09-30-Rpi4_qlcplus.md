@@ -109,6 +109,27 @@ qlcplus-data/stable,now 4.12.6-1 all
 
 ```
 
-Dla 
+Dla ustawień fabryczn/ych bramki artnet "Promyk 3.xx" należy ustawić adres karty **eth0** na 192.168.1.2/24. Ponieważ w Linux można łatwo ustawiać podinterfejsy, więc można także ustawić drugi adres na tej karcie sieciowej **2.0.0.1/8** 
+
+![wired connection](https://wklteam64.github.io/img/WiredCon.webp)
+
+```shell 
+lulek@lulek:~ $ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:1d:85:28 brd ff:ff:ff:ff:ff:ff
+    inet 2.0.0.1/8 brd 2.255.255.255 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::dfd5:831c:bc67:430/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+```
 
 
