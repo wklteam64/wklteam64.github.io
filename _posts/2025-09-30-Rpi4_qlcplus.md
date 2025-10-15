@@ -234,3 +234,4 @@ QLC+ wykrywa wszystkie urządzenia sieciowe Artnet w zakładce **Nodes Tree**
 
 ![config www](https://wklteam64.github.io/img/qlcNdtree.webp)
 **Rysynek nr 7: Zakładka Nodes Tree pokazuje znalezione bramki Artnet**
+
