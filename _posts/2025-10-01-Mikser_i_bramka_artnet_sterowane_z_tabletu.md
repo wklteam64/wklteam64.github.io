@@ -6,7 +6,7 @@ author: WKL TEAM64
 # sidebar_link: true
 ---
 
-# Mikser i bramka Artnet sterowane z jednego tabletu
+<!-- # Mikser i bramka Artnet sterowane z jednego tabletu -->
 
  **Sterowanie z jednego tabletu mikserem i aplikacją dmx512 może być dla mobilnych Dj-ów bardzo wygodne**. 
 
@@ -24,9 +24,16 @@ Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdy�
 ```mermaid
 flowchart LR 
 
+subgraph MIKSER
 A[Mikser 
 tryb DHCPS
 adres IPv4 192.168.1.1]
+
+C((Wi-Fi: 
+X AIR))
+end
+
+subgraph Tablet
 B[[Tablet
 z aplikacją X AIR
 adres IPv4 przydzielony 
@@ -34,10 +41,12 @@ z serwera
 DHCP w zakresie 
 IP 192.168.1.101 – 
 192.168.1.132]]
-C((Wi-Fi: 
-X AIR))
+TW(karta WI-FI)
+end
+
 A-->C
-C-->B
+C-->TW
+TW-->B
 
 
 ```
@@ -68,18 +77,23 @@ Fabrycznie ruter tej firmy przeważnie posiada ustawiony fabrycznie adres ip : 1
 
 Aby zmienić adres rutera łączymy się z nim za pomocą Wi-Fi (fabryczna nazwa sieci TPLINK) lub kabla LAN do jego złącza LAN(tryb DHCP karty sieciowej komputera) i w przeglądarce wpisuje jego adres fabryczny: 192.168.0.1 a potem fabryczne login i hasło.
 
-W zakładce ADVANCED(zaawansowane)/Network/ LAN należy zmienić na adres ==192.168.1.1== i zapisać **(save).**
+W zakładce ADVANCED(zaawansowane)/Network/ LAN należy zmienić na adres **192.168.1.1** i zapisać **(save).**
 Po restarcie ruter powinien rozpocząć pracę z adresem 192.168.1.1, jeśli nie będzie on dostępny należy wyłączyć i włączyć ponownie się do sieci WIFI Tplink lub wyjąć i włożyć ponownie kabel LAN.
 
 > Zaleca się dla nowego sprzętu sieciowego zmianę haseł na własne, co nie będzie ujęte w tym tutorialu.
 
 ```mermaid
 flowchart LR
+subgraph MIKSER
 A[Mikser 
 tryb DHCP
 adres IPv4 
 192.168.1.xxx DHCP
 lub 192.168.1.2 STATIC]
+ML(LAN)
+
+end
+subgraph Tablet
 B[[Tablet
 z aplikacją X AIR
  i DMX512 /Artnet/SACN/
@@ -87,33 +101,45 @@ adres IPv4 przydzielony
 z serwera 
 DHCP rutera
 IPv4 192.168.1.xxx]]
-C((Wi-Fi: 
-Tplink))
+TW((karta WIFI))
+
+end
+
+subgraph BRAMKA_ARTNET 
+P[bramka ARTNET 
+PROMYK 3.60
+adres IPv4 192.168.1.30]
+PLAN(LAN)
+
+end
+
+subgraph Ruter
 R[ruter TPLINK z 
 serwerem DHCP
 adres
 IPv4 192.168.1.1]
-L((LAN))
-P[bramka ARTNET 
-PROMYK 3.60
-adres IPv4 192.168.1.30]
+L(LAN)
+C((Wi-Fi: 
+Tplink))
+end
 
-
-L --> A
+L --> ML
+ML-->A
 R --> L
-C --> B
+C --> TW
 R -->C
-L --> P
-
-
+L --> PLAN
+PLAN --> P
+TW-->B
 
 ```
+
 ***Rysunek nr 6: Infrastruktura LAN dla układu sterowania z tableta z obsługą aplikacji miksera i aplikacji DMX512(artnet/SACN)***
 
-Dzięki takiej konfiguracji można korzystać z aplikacji DMX512 i X AIR gdzie centralnym punktem jest ruter WI-FI. Z reguły profesjonalna obsługa wymaga rozdzielenia urządzeń ale dla małych sztuk i mobilnych scen taki zestaw sprawuje się dobrze. ==Zalecana częstotliwość WI-FI to 5Ghz==.
+Dzięki takiej konfiguracji można korzystać z aplikacji DMX512 i X AIR gdzie centralnym punktem jest ruter WI-FI. Z reguły profesjonalna obsługa wymaga rozdzielenia urządzeń ale dla małych sztuk i mobilnych scen taki zestaw sprawuje się dobrze. **Zalecana częstotliwość WI-FI to 5GHz**.
 Kierunek strzałki pokazuje kto nadaje adres ip przy użyciu protokołu DHCP. Przy **rysunku nr 2** był to mikser, zaś docelowo jest to ruter. 
 
-
+W miejsce tabletu może być dowolny komputer z systemem Windows, Mac OSX lub Linux w zależności od występowania oprogramowania na danej platformie systemowej.
 
 
 
