@@ -112,7 +112,7 @@ qlcplus-data/stable,now 4.12.6-1 all
 Dla ustawień fabryczn/ych bramki artnet "Promyk 3.xx" należy ustawić adres karty **eth0** na 192.168.1.2/24. Ponieważ w Linux można łatwo ustawiać podinterfejsy, więc można także ustawić drugi adres na tej karcie sieciowej **2.0.0.1/8** 
 
 ![wired connection](https://wklteam64.github.io/img/WiredCon.webp)
-**Rysynek nr 2: Widok okna "Wired connection"**
+**Rysunek nr 2: Widok okna "Wired connection"**
 
 ```shell 
 lulek@lulek:~ $ ip a
@@ -151,7 +151,7 @@ rtt min/avg/max/mdev = 0.096/0.130/0.166/0.028 ms
 Po sprawdzeniu prawidłowości podłączenia należy uruchomić **QLC+**
 
 ![wired connection](https://wklteam64.github.io/img/qlcUniverse.webp)
-**Rysynek nr 3: Okno 'Inputs/OutPuts' do ustawienia konfiguracji interfejsów DMX512**
+**Rysunek nr 3: Okno 'Inputs/OutPuts' do ustawienia konfiguracji interfejsów DMX512**
 
 Dla bramki Artnet wybiera się dla każdej zakładki *Universe X/MAPPING* zaznacza się **checkbox** Output dla adresu ip karty sieciowej do którego jest ona podłączona.
 
@@ -215,23 +215,23 @@ DX22 -->XLR4
 
 ```
 
-**Rysynek nr 4: Schemat infrastruktury sieciowej LAN i wyjść DMX512**
+**Rysunek nr 4: Schemat infrastruktury sieciowej LAN i wyjść DMX512**
 
 
 Przy konfiguracji kilku bramek Artnet należy podłączać je do switch'a pojedynczo i zmieniać ich adresy od ostatniego, czyli w tym przypadku adres fabryczny 192.168.1.30 należy zmienić 192.168.1.31 i zapisać za pomocą strony konfiguracji wbudowanej w "PROMYK 3.xx".
 
 ![config www](https://wklteam64.github.io/img/cfgw30.webp)
-**Rysynek nr 5: Strona konfiguracji bramki Artnet Promyk 3.50**
+**Rysunek nr 5: Strona konfiguracji bramki Artnet Promyk 3.50**
 
 Należy teraz zmienić adres ipv4 na 192.168.1.31 i Universe (DX0)-2 , (DX1)-3.
 
 ![config www](https://wklteam64.github.io/img/cfgw31.webp)
-**Rysynek nr 6: Strona konfiguracji bramki Artnet Promyk 3.50 po zmianach**
+**Rysunek nr 6: Strona konfiguracji bramki Artnet Promyk 3.50 po zmianach**
 
 Wtedy dopiero można podłączyć bramkę Artnet 01 i nie zmieniać jej parametrów.
 
 QLC+ wykrywa wszystkie urządzenia sieciowe Artnet w zakładce **Nodes Tree**
 
 ![config www](https://wklteam64.github.io/img/qlcNdtree.webp)
-**Rysynek nr 7: Zakładka Nodes Tree pokazuje znalezione bramki Artnet**
+**Rysunek nr 7: Zakładka Nodes Tree pokazuje znalezione bramki Artnet**
 
