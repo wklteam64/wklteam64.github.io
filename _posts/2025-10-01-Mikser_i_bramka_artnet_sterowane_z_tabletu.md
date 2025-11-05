@@ -12,6 +12,8 @@ author: WKL TEAM64
 
 Przykład takiego rozwiązania będzie dla modelu **Behringer X AIR XR12**, gdyż dla późniejszych modeli sprawa konfiguracji jest analogiczna.
 
+> *UWAGA:*  **Ruter jest urządzeniem samodzielnym, które nie potrzebuje zakupu internetu do prawidłowego funkcjonowania, całość działania zestawu opisana w tym tutorialu jest oparta o jego sieć LAN po WI-FI i Ethernet.**  
+
 ![mixer](https://wklteam64.github.io/img/i-behringer-x-air-xr12.webp)
 ***Rysunek nr 1: Behringer X AIR XR12***
 
