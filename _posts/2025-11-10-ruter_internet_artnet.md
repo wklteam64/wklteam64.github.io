@@ -78,3 +78,4 @@ Protokół Artnet posiada według założeń adresacji IP natywnej:
 
 ---
   Adresacja natywna protokołu Artnet została wybrana ze względu na dużą liczbę dostępnych adresów IP w tych zakresach, co pozwala na obsługę wielu urządzeń w sieci bez ryzyka konfliktów adresów IP, z tymże Serwer DHCP rutera może nie obsługiwać tych zakresów adresów IP.
+> Bramka Artnet "PROMYK 3.xx" posiada dwa wyjścia DMX512, które domyślnie są skonfigurowane do odbioru danych z universe 0 i 1. W przypadku korzystania z większej liczby universe, należy odpowiednio skonfigurować bramkę Artnet oraz aplikację sterującą oświetleniem, aby zapewnić prawidłową komunikację i sterowanie urządzeniami oświetleniowymi. Wtedy należy pamiętać o odpowiednim ustawieniu adresów IP i masek podsieci, aby uniknąć konfliktów w sieci LAN oraz poustawiać adresację UNICAST w aplikacji DMX512, gdyż przy większej liczbie universe przesyłanych broadcast'em może dojść do znacznego obciążenia sieci LAN.
