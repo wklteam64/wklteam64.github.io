@@ -36,8 +36,35 @@ To urządzenie posiada złącza RJ-45 LAN(od ang. Local Area Network) i WAN(od a
 
 Część WAN i LAN może być w ruterze fizycznie rozdzielona lub występować jako jedno złącze konfigurowalne programowo. Gdy są rozdzielone od siebie to złącze WAN ma oddzielną konfigurację.
 
+Do skomunikowania się części LAN i WAN służy mechanizm translacji adresów NAT (Network Address Translation), który umożliwia urządzeniom w sieci lokalnej komunikację z zewnętrznymi sieciami.
+[link do wikipedii o NAT](https://pl.wikipedia.org/wiki/Network_address_translation).
+
+
 ![gniazda LAN WAN rutera dlink](https://wklteam64.github.io/img/inWanSet.webp)
 ***Rysunek nr 4: Przykład konfiguracji złącza WAN opisanego w tym modelu jako Internet***
 
+Ruter może być skonfigurowany aby udostępniać serwer DHCP, który będzie przydzielał adresy IP podłączonym urządzeniom lub urządzenia mogą mieć ustawione statyczne adresy IP w tej samej podsieci.
 
-Ruter może być skonfigurowany jako serwer DHCP, który będzie przydzielał adresy IP podłączonym urządzeniom lub urządzenia mogą mieć ustawione statyczne adresy IP w tej samej podsieci
+>Częstą pomyłką przy konfiguracji bramek Artnet jest domniemanie że protokół DHCP działa standardowo na kartach sieciowych LAN komputera, gdy w rzeczywistości w standardowych ustawieniach serwer DHCP nie występuje. W takim przypadku należy ręcznie ustawić statyczny adres IP w tej samej podsieci co bramka ARTNET. 
+
+![serwer DHCPk](https://wklteam64.github.io/img/in_dhcp_serwer.webp)
+***Rysunek nr 5: Przykład konfiguracji DHCP Serwera na ruterze, w tym przykładzie przydziela on adresy w zakresie 192.168.0.100 -192.168.0.249, zaś lista DHCP Client list zawiera zbiór urządzeń które dostały adres IP od serwera. Ta lista nie pokazuje urządzeń, które posiadają adresy statyczne.***
+ 
+Bramki Artnet zazwyczaj pracują w trybie statycznym, gdyż wtedy w aplikacji sterującej oświetleniem można ustawić stały adres IP bramki i nie ma potrzeby sprawdzania jaki adres został przydzielony przez serwer DHCP i ewentualnej zmiany ustawień w aplikacji sterującej. Aplikacje sterujące oświetleniem często pozwalają na skanowanie sieci w poszukiwaniu bramek Artnet, ale praktycznie nie działa to poprawnie z serwerem DHCP. Populane aplikacje sterujące oświetleniem to np. **QLC+ , Freestyler, DMXControl, ChamSys MagicQ itp.** dla zabezpieczenia się przed zmianą adresu IP bramki Artnet trzeba by było usatwić w tej aplikacji adres BROADCAST. Dla większej liczby universe wychodzących broadcast'em doprowadziło by to do znacznego obciążenia sieci LAN.
+
+![LOG](https://wklteam64.github.io/img/inLog.webp)
+***Rysunek nr 6: Włączenie logowania ułatwia diagnostykę sieci LAN, jest ona niezbędna w przypadku zainstnienia jakiegoś problemu***
+
+Bramka Artnet powinna mieć ustawiony adres IP w tej samej podsieci co ruter i inne urządzenia w sieci LAN. Dla przykładu bramka Artnet "PROMYK 3.60" ma domyślnie ustawiony adres IP 192.168.1.30 i maskę podsieci 255.255.255.0. Są dwie drogi aby ustawić adres IP zgodny z siecią LAN rutera:
+
+- Ustawić w bramce Artnet adres IP statyczny zgodny z podsiecią rutera, poprzez zmianę ustawień sieci LAN rutera na 192.168.1.1
+- Ustawić w bramce Artnet tryb DHCP i pozwolić ruterowi przydzielić adres IP z puli DHCP, a następnie odczytać jaki adres został przydzielony i zapisać go poprzez stronę konfiguracyjną bramki Artnet. 
+
+> UWAGA! Bramka Artnet w trybie DHCP może otrzymać inny adres IP przy każdym ponownym uruchomieniu rutera lub bramki, co może prowadzić do problemów z komunikacją w sieci LAN. Dlatego zaleca się używanie statycznych adresów IP dla bramek Artnet w środowiskach produkcyjnych. Dlatego od wersji 3.60 bramka PROMYK wymusza ustawienie statycznego adresu IP i jego zapis po użyciu trybu DHCP do początkowej konfiguracji. **Nie możliwości startu w trybie DHCP jak wersjach 1.11, 1.20, 3.00 i 3.50. Zostało to wprowadzone aby uniknąć problemów ze złą konfiguracją w aplikacjach sterujących oświetleniem.**
+
+
+![LOG](https://wklteam64.github.io/img/inTplSetLan.webp)
+***Rysunek nr 7: Ustawienie adresu rutera od strony LAN na 192.168.1.1/24 i tym samym jego podsieci 192.168.1.0/24***
+
+> 192.168.1.0 to adres sieci /24 to skrócony zapis maski 255.255.255.0, zaś adres 192.168.1.255 to adres rozgłoszeniowy (BROADCAST) dla tej podsieci. Dociera on do wszystkich urządzeń w tej podsieci.
+
