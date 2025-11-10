@@ -115,7 +115,9 @@ IPv4 192.168.1.1]
 L(LAN)
 C(LAN)
 D(LAN)
+E(LAN)
 WAN(WAN)
+WIFI((Wi-Fi))
 end
 
 L --> ML
@@ -130,4 +132,4 @@ TW-->B
 
 ```
 
-***Rysunek nr 8: Infrastruktura LAN dla układu sterowania kilkoma bramkami ARTNET***
+***Rysunek nr 8: Infrastruktura LAN dla układu sterowania kilkoma bramkami ARTNET, aplikacja DMX512 może sterować oświetleniem z urządzenia podłączonego do rutera poprzez LAN, Wi-Fi a nawet WAN pozwalając na zdalne sterowanie z odległego miejsca, ale ta opcja wymaga specjalnej konfiguracji urządzeń sieciowych. Ta możliwość zostanie omówiona w innym poście.***
