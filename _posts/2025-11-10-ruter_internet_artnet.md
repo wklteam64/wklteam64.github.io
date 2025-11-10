@@ -34,6 +34,10 @@ To urządzenie posiada złącza RJ-45 LAN(od ang. Local Area Network) i WAN(od a
 ![gniazda LAN WAN rutera dlink](https://wklteam64.github.io/img/inRutWifi01.webp)
 ***Rysunek nr 3: Typowy schemat pracy ruterów domowych z podłączeniem do internetu poprzez złącze WAN lub coś w rodzaju jako modem LTE. Dla potrzeb biura lub domu brak internetu byłby niepożądany z oczywistych względów, zaś dla innych zastosowań nie jest obowiązkowy i można go pominąć***
 
+Część WAN i LAN może być w ruterze fizycznie rozdzielona lub występować jako jedno złącze konfigurowalne programowo. Gdy są rozdzielone od siebie to złącze WAN ma oddzielną konfigurację.
+
+![gniazda LAN WAN rutera dlink](https://wklteam64.github.io/img/inWanSet.webp)
+***Rysunek nr 4: Przykład konfiguracji złącza WAN opisanego w tym modelu jako Internet***
 
 
 Ruter może być skonfigurowany jako serwer DHCP, który będzie przydzielał adresy IP podłączonym urządzeniom lub urządzenia mogą mieć ustawione statyczne adresy IP w tej samej podsieci
