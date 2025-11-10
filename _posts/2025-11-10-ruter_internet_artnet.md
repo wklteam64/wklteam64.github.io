@@ -66,5 +66,15 @@ Bramka Artnet powinna mieć ustawiony adres IP w tej samej podsieci co ruter i i
 ![LOG](https://wklteam64.github.io/img/inTplSetLan.webp)
 ***Rysunek nr 7: Ustawienie adresu rutera od strony LAN na 192.168.1.1/24 i tym samym jego podsieci 192.168.1.0/24***
 
-> 192.168.1.0 to adres sieci /24 to skrócony zapis maski 255.255.255.0, zaś adres 192.168.1.255 to adres rozgłoszeniowy (BROADCAST) dla tej podsieci. Dociera on do wszystkich urządzeń w tej podsieci.
+> 192.168.1.0 to adres sieci /24 to skrócony zapis maski 255.255.255.0, zaś adres 192.168.1.255 to adres rozgłoszeniowy (BROADCAST),który dociera on do wszystkich urządzeń tej podsieci.
 
+Protokół Artnet posiada według założeń adresacji IP natywnej:
+- primary : 2.0.0.0/8
+- secondary: 10.0.0.0/8
+  
+---
+  Podsieć 192.168.x.x/24 jest powszechnie używana w sieciach lokalnych i działa z protokółem Artnet bez problemów, ale istnieją aplikacje DMX512 które mogą mieć problemy z komunikacją w tej podsieci. W takim przypadku można zmienić adresację LAN rutera i bramki Artnet na 10.0.0.x/24 lub 2.0.0.x/8 aby uniknąć problemów z kompatybilnością. Taką aplikacją jest **Dot2 ONPC**, która wymaga adresacji 2.0.0.x/8 dla poprawnej komunikacji z bramką Artnet.
+
+
+---
+  Adresacja natywna protokołu Artnet została wybrana ze względu na dużą liczbę dostępnych adresów IP w tych zakresach, co pozwala na obsługę wielu urządzeń w sieci bez ryzyka konfliktów adresów IP, z tymże Serwer DHCP rutera może nie obsługiwać tych zakresów adresów IP.
