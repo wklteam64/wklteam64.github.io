@@ -21,6 +21,19 @@ Ruter jest urządzeniem samodzielnym, które nie potrzebuje zakupu internetu do 
 To urządzenie posiada złącza RJ-45 LAN(od ang. Local Area Network) i WAN(od ang. wide area network). 
 
 
+![gniazda LAN WAN rutera tplink](https://wklteam64.github.io/img/inGniazdaTplink.webp)
+***Rysunek nr 1: Gniazda RJ-45 rutera TPLINK, kolorem żółtym oznaczone są gniazda LAN, a niebieskim WAN***
+
+![gniazda LAN WAN rutera dlink](https://wklteam64.github.io/img/in_gniazda_dlink.webp)
+***Rysunek nr 2: Gniazda RJ-45 rutera DLINK, kolorem szarym oznaczone są gniazda LAN, a żółtym WAN***
+
+> *Na podstawie rysunków nr 1 i 2 gniazda LAN i WAN posiadają różną kolorystykę, ale gniazdo LAN i WAN różni się od siebie w danym modelu innym kolorem i dodatkowo są od siebie rozdzielone. Istnieją modele które złącze jest w formacie RJ-11(DSL, ADSL) lub brak gdy posiadają modem z dostępem do sieci komórkowej*
+
+>  **Podsumowując:** *gniazda LAN służą do podłączania urządzeń w sieci lokalnej (np. komputery, drukarki, kontrolery DMX, bramki Artnet itp.), natomiast gniazdo WAN jest używane do podłączenia rutera do zewnętrznej sieci, takiej jak Internet.*
+
+![gniazda LAN WAN rutera dlink](https://wklteam64.github.io/img/inRutWifi01.webp)
+***Rysunek nr 3: Typowy schemat pracy ruterów domowych z podłączeniem do internetu poprzez złącze WAN lub coś w rodzaju jako modem LTE. Dla potrzeb biura lub domu brak internetu byłby niepożądany z oczywistych względów, zaś dla innych zastosowań nie jest obowiązkowy i można go pominąć***
+
 
 
 Ruter może być skonfigurowany jako serwer DHCP, który będzie przydzielał adresy IP podłączonym urządzeniom lub urządzenia mogą mieć ustawione statyczne adresy IP w tej samej podsieci
