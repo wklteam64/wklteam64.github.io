@@ -50,7 +50,7 @@ Ruter może być skonfigurowany aby udostępniać serwer DHCP, który będzie pr
 ![serwer DHCPk](https://wklteam64.github.io/img/in_dhcp_serwer.webp)
 ***Rysunek nr 5: Przykład konfiguracji DHCP Serwera na ruterze, w tym przykładzie przydziela on adresy w zakresie 192.168.0.100 -192.168.0.249, zaś lista DHCP Client list zawiera zbiór urządzeń które dostały adres IP od serwera. Ta lista nie pokazuje urządzeń, które posiadają adresy statyczne.***
  
-Bramki Artnet zazwyczaj pracują w trybie statycznym, gdyż wtedy w aplikacji sterującej oświetleniem można ustawić stały adres IP bramki i nie ma potrzeby sprawdzania jaki adres został przydzielony przez serwer DHCP i ewentualnej zmiany ustawień w aplikacji sterującej. Aplikacje sterujące oświetleniem często pozwalają na skanowanie sieci w poszukiwaniu bramek Artnet, ale praktycznie nie działa to poprawnie z serwerem DHCP. Populane aplikacje sterujące oświetleniem to np. **QLC+ , Freestyler, DMXControl, ChamSys MagicQ itp.** dla zabezpieczenia się przed zmianą adresu IP bramki Artnet trzeba by było usatwić w tej aplikacji adres BROADCAST. Dla większej liczby universe wychodzących broadcast'em doprowadziło by to do znacznego obciążenia sieci LAN.
+Bramki Artnet zazwyczaj pracują w trybie statycznym, gdyż wtedy w aplikacji sterującej oświetleniem można ustawić stały adres IP bramki i nie ma potrzeby sprawdzania jaki adres został przydzielony przez serwer DHCP i ewentualnej zmiany ustawień w aplikacji sterującej. Aplikacje sterujące oświetleniem często pozwalają na skanowanie sieci w poszukiwaniu bramek Artnet, ale praktycznie nie działa to poprawnie z serwerem DHCP. Populane aplikacje sterujące oświetleniem to np. **QLC+ , Freestyler, DMXControl, ChamSys MagicQ itp.** dla zabezpieczenia się przed zmianą adresu IP bramki Artnet trzeba by było ustawić w tej aplikacji adres BROADCAST. Dla większej liczby universe wychodzących broadcast'em doprowadziło by to do znacznego obciążenia sieci LAN.
 
 ![LOG](https://wklteam64.github.io/img/inLog.webp)
 ***Rysunek nr 6: Włączenie logowania ułatwia diagnostykę sieci LAN, jest ona niezbędna w przypadku zainstnienia jakiegoś problemu***
@@ -68,7 +68,7 @@ Bramka Artnet powinna mieć ustawiony adres IP w tej samej podsieci co ruter i i
 
 > 192.168.1.0 to adres sieci /24 to skrócony zapis maski 255.255.255.0, zaś adres 192.168.1.255 to adres rozgłoszeniowy (BROADCAST),który dociera on do wszystkich urządzeń tej podsieci.
 
-Protokół Artnet posiada według założeń adresacji IP natywnej:
+Według założeń protokół Artnet posiada  adresację IP natywną:
 - primary : 2.0.0.0/8
 - secondary: 10.0.0.0/8
   
