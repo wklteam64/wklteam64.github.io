@@ -16,3 +16,5 @@ W instrukcji obsługi konsoli TITAN AVOLITES znajduje się zalecenie aby urządz
 > Uwaga: Ważne jest, aby oba urządzenia miały unikalne adresy IP w tej samej podsieci, aby uniknąć konfliktów adresów.
 
 Sposoby jak zmienić adresy IP bramki PROMYK 3.xx zostały opisane w [tym artykule](https://wklteam64.github.io/category/edge-case.html)
+
+instrukcje dotyczące zmiany adresu IP w konsoli TITAN AVOLITES można znaleźć w [dokumentacji producenta](https://manual.avolites.com/docs/networking/controlling-fixtures-over-a-network).
