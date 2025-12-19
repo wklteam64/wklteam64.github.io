@@ -13,4 +13,4 @@ Bramka Artnet PROMYK 3.60 jest urządzeniem sieciowym, które umożliwia przesy�
 
 **Krok 1: Podłączenie bramki PROMYK 3.60 do sieci**
 
-
+sp
