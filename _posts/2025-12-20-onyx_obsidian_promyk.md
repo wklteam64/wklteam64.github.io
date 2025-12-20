@@ -1,9 +1,7 @@
 ---
-# category: page
 layout: post
 title: Konfiguracja bramki Artnet PROMYK 3.60 z oprogramowaniem ONYX OBSIDIAN
 author: WKL TEAM64
-# sidebar_link: true
 ---
 
  **Konfiguracja bramki Artnet PROMYK 3.60 z oprogramowaniem ONYX OBSIDIAN**
