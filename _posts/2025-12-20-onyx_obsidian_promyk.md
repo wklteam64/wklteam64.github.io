@@ -13,7 +13,7 @@ Bramka Artnet PROMYK 3.xx jest urządzeniem sieciowym, które umożliwia przesy�
 2. karta sieciowa komputera/konsoli z oprogramowaniem ONYX OBSIDIAN ma mieć ustawiony adres IP w tej samej podsieci, np.2.0.0.1 z maską podsieci 255.0.0.0
 
 
-**Krok 1: Podłączenie bramki PROMYK 3.60 do sieci**
+**Krok 1: Podłączenie bramki PROMYK 3.xx do sieci**
 
 - Podłącz bramkę do zasilania.
   
