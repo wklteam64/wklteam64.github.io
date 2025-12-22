@@ -33,8 +33,33 @@ A do wyświetlenia wszystkich ustawień sieciowych użyj polecenia:
   ipconfig
 ```
 ![ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
-**Rysunek nr 1: Rezultat polecenia ipconfig**
+**Rysunek nr 1: Rezultat polecenia ipconfig, w tym przypadku oprócz bramki PROMYK 3.xx na złączu *Ethernet 2* które ma adres 2.0.0.1/8, jest podłączony ruter z wifi, który przydzielił po DHCP adres 192.168.250.110/24**
 
+Jeżeli złącze *ETHERNET 2* nie ma adresu IPv4 ustawionego wyświetli się komunikat **Media disconnected** jak na rysunku nr 1.
+
+Wtedy należy wejść w ustawienia karty sieciowej i ustawić adres IP ręcznie.
+![ipconfig okno](https://wklteam64.github.io/img/WekranKonfEth.webp)
+**Rysunek nr 2: Aby dostać się do tego okna ustawień należy odszukać ustawienia karty sieciowej w ustawieniach komputera dotyczących sieci komputerowych przewodowych i bezprzewodowych**
+
+
+![ipconfig okno ](https://wklteam64.github.io/img/WethKonf.webp)
+**Rysunek nr 3:Aby dostać się do tego okna ustawień należy odszukać ustawienia karty sieciowej i kliknąć w niej prawym przyciskiem myszy, a następnie wybrać opcję "Właściwości", w starszych systemach Windows używa się tego okna**
+
+> **UWAGA:** W kartach sieciowych LAN nie ma włączonego protokołu DHCP, więc adres IP musi być ustawiony ręcznie.
+
+Jeżeli polecenie ping zakończy się sukcesem, oznacza to, że bramka PROMYK 3.xx jest poprawnie podłączona do sieci i gotowa do konfiguracji.
+
+> **UWAGA:** Strona konfiguracji bramki PROMYK 3.xx jest dostępna pod adresem obecnym a nie fabrycznym, czyli jeżeli bramka ma adres IP 2.168.1.30 to strona konfiguracyjna będzie dostępna pod adresem http://2.168.1.30 a nie pod adresem http://192.168.1.30. Stronę konfiguracyjną możemy otworzyć tylko do wglądu, gdy nic nie zmieniamy w ustawieniach bramki. W przypadku zmiany **PROMYKA 3.60** w trybie 3, który jest nietrwałym trybem pracy, po restarcie bramka wróci do ustawień fabrycznych, należy te zmiany zapisać aby były trwałe.
+
+![web-config](https://wklteam64.github.io/img/Wwebpage.webp)
+**Rysunek nr 4: Strona konfiguracyjna bramki PROMYK 3.50**
 
 
 **Krok 2: Konfiguracja oprogramowania ONYX OBSIDIAN**
+
+
+- Otwórz oprogramowanie ONYX OBSIDIAN.
+- Przejdź do MENU > ETHERDMX
+  
+  ![web-config](https://wklteam64.github.io/img/WonGlogalOut.webp)
+**Rysunek nr 5: W tym oknie należy włączyć protokół Artnet, opcjonalnie można włączyć protokół *bROADcast* dla celów diagnostyki za pomocą programu *Wireshark* lub ART**
