@@ -75,4 +75,13 @@ Jeżeli polecenie ping zakończy się sukcesem, oznacza to, że bramka PROMYK 3.
 **Należy pamiętać, że w wersji bez licencji oprogramowania ONYX OBSIDIAN można używać tylko jednego UNIVERSE. Jeśli potrzebujesz więcej UNIVERSE, konieczne będzie zakupienie odpowiedniej licencji lub podłączenie do konsoli tej firmy.**
 
 ![onyx-M2g0](https://wklteam64.github.io/img/W_M2goEthDmx.webp)
-**Rysunek nr 7:**
+**Rysunek nr 7: Złącza konsoli Martin, bramkę ARTNET PROMYK 3.xx podłącza się do portu *EtherDMX***
+
+>W przypadku podłączenia bramki PROMYK 3.xx do konsoli Martin, ONYX itp w większej liczbie należy podłączyć je do przełącznika sieciowego (switch) i ustawić odpowiednie adresy IP w tej samej podsieci 2.x.x.x/8. 
+
+Po wykonaniu powyższych kroków bramka Artnet PROMYK 3.xx powinna być poprawnie skonfigurowana i gotowa do pracy z oprogramowaniem ONYX OBSIDIAN. Możesz teraz przesyłać sygnały DMX przez sieć Ethernet za pomocą protokołu Artnet, gdy zostaną dodane odpowiednie urządzenia **(FIXTURES)** i efekty świetlne w oprogramowaniu ONYX OBSIDIAN za pomocą **patch** i przypisania ich do odpowiednich UNIVERSE.
+
+Wtedy miga dioda LED na bramce PROMYK 3.xx na złączu DX0 (przy jednym universe) lub DX0 i DX1 (przy dwóch universe) sygnalizując odbiór danych DMX.
+
+![Poradnik Wideo](https://youtu.be/WJkzyEks0rM)
+**Film instruktażowy dotyczący konfiguracji bramki Artnet PROMYK 3.xx z oprogramowaniem ONYX OBSIDIAN**
