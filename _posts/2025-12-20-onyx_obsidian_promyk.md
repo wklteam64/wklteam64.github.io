@@ -61,7 +61,7 @@ Jeżeli polecenie ping zakończy się sukcesem, oznacza to, że bramka PROMYK 3.
 - Otwórz oprogramowanie ONYX OBSIDIAN.
 - Przejdź do MENU > ETHERDMX
   
-  ![](https://wklteam64.github.io/img/WonGlogalOut.webp)
+  ![onyx-settings](https://wklteam64.github.io/img/WonGlogalOut.webp)
 **Rysunek nr 5: W tym oknie należy włączyć protokół Artnet, opcjonalnie można włączyć protokół *bROADcast* dla celów diagnostyki za pomocą programu *Wireshark* lub https://www.lightjams.com/artnetominator/**
 
 - W sekcji **DEVICES** powinno pojawić się urządzenie PROMYK 3.xx z adresem IP
@@ -69,4 +69,10 @@ Jeżeli polecenie ping zakończy się sukcesem, oznacza to, że bramka PROMYK 3.
   ![onyx-devices](https://wklteam64.github.io/img/WonyxKonfDev.webp)
   **Rysunek nr 6: W tym oknie należy wybrać urządzenie PROMYK 3.xx i przypisać mu odpowiednie UNIVERSE, w wersji PC możemy bez licencji uruchomić tylko jeden universe, a numeracja w programie zaczyna się o numeru 1, który jest w protokole ARTNET numerem 0**
 
-  
+
+  > W aplikacji ONYX OBSIDIAN numeracja UNIVERSE zaczyna się od 1, natomiast w protokole Artnet numeracja zaczyna się od 0. Należy pamiętać o tej różnicy podczas przypisywania UNIVERSE do bramki PROMYK 3.xx.
+
+**Należy pamiętać, że w wersji bez licencji oprogramowania ONYX OBSIDIAN można używać tylko jednego UNIVERSE. Jeśli potrzebujesz więcej UNIVERSE, konieczne będzie zakupienie odpowiedniej licencji lub podłączenie do konsoli tej firmy.**
+
+![onyx-M2g0](https://wklteam64.github.io/img/W_M2goEthDmx.webp)
+**Rysunek nr 7:**
