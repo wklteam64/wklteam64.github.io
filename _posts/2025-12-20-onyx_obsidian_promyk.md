@@ -83,5 +83,4 @@ Po wykonaniu powyższych kroków bramka Artnet PROMYK 3.xx powinna być poprawni
 
 Wtedy miga dioda LED na bramce PROMYK 3.xx na złączu DX0 (przy jednym universe) lub DX0 i DX1 (przy dwóch universe) sygnalizując odbiór danych DMX.
 
-![Poradnik Wideo](https://youtu.be/WJkzyEks0rM)
-**Film instruktażowy dotyczący konfiguracji bramki Artnet PROMYK 3.xx z oprogramowaniem ONYX OBSIDIAN**
+[Film instruktażowy dotyczący konfiguracji bramki Artnet PROMYK 3.xx z oprogramowaniem ONYX OBSIDIAN-Youtube](https://youtu.be/WJkzyEks0rM)
