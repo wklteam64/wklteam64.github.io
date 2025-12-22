@@ -32,6 +32,9 @@ A do wyświetlenia wszystkich ustawień sieciowych użyj polecenia:
 ``` shell
   ipconfig
 ```
+![ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
+**Rysunek nr 1: Rezultat polecenia ipconfig**
+
 
 
 **Krok 2: Konfiguracja oprogramowania ONYX OBSIDIAN**
