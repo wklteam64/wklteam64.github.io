@@ -49,4 +49,8 @@ Drugim sposobem na sprawdzenie połączenia jest otwarcie strony konfiguracyjnej
 ![web-config](https://wklteam64.github.io/img/36konfFabric192168130.webp)
 **Rysunek nr 2: Strona konfiguracyjna bramki PROMYK 3.60 pod adresem fabrycznym 192.168.1.30**
 
->**UWAGA:** Strona konfiguracji bramki PROMYK 3.60 jeżeli bramka ma adres IP inny niż fabryczny to będzie dostępna pod adresem obecnym a nie fabrycznym, czyli jeżeli bramka ma adres IP 2.168.100.100 to strona konfiguracyjna będzie dostępna pod adresem http://2.168.100.100. **Częstym błędem jest próba otwarcia strony konfiguracyjnej pod adresem który nie jest aktualnym adresem IP bramki PROMYK 3.60.**. 
+>**UWAGA:** Strona konfiguracji bramki PROMYK 3.60 jeżeli bramka ma adres IP inny niż fabryczny to będzie dostępna pod adresem obecnym a nie fabrycznym, czyli jeżeli bramka ma adres IP 2.168.100.100 to strona konfiguracyjna będzie dostępna pod adresem http://2.168.100.100. **Częstym błędem jest próba otwarcia strony konfiguracyjnej pod adresem który nie jest aktualnym adresem IP bramki PROMYK 3.60, a także próby szukania jej w internecie. Ta strona nie jest dostępna w internecie, tylko lokalnie w sieci LAN, bo jest wyzwalana przez protokół HTTP z pamięci Flash urządzenia firmy WKL TEAM64.**
+
+Film instruktażowy pokazujący jak w 30 sekund uruchomić bramkę PROMYK 3.60 w podsieci 192.168.1.x w systemie Windows:
+
+[![Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows](https://wklteam64.github.io/img/yt.webp)](https://youtu.be/9C-LrO0mqXc?si=7ek54gqX0FarIBnd)
