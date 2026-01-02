@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemach Windows, macOS i Linux
+title: Pierwsze uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemach Windows, macOS i Linux
 author: WKL TEAM64
 ---
 
@@ -8,7 +8,7 @@ author: WKL TEAM64
 
 Bramka Artnet PROMYK 3.60 jest urządzeniem sieciowym, które umożliwia przesyłanie sygnałów DMX przez protokół Artnet w sieciach Ethernet. Poniżej przedstawiamy szybki sposób na uruchomienie tej bramki w zaledwie 30 sekund.
 
-Taki czas wymaga jedynie podłączenia bramki do zasilania oraz ustawienia adresu IP karty sieciowej komputera w systemach Windows, macOS lub Linux
+>*Taki czas wymaga jedynie podłączenia bramki do zasilania oraz ustawienia adresu IP karty sieciowej komputera w systemach Windows, macOS lub Linux*. **Opisane niżej konfiguracje są jednorazowe, po zapisaniu ustawień bramka PROMYK 3.60 będzie działać poprawnie w kolejnych uruchomieniach bez potrzeby ponownej konfiguracji.**
 
 **1. Przypadek konfiguracji w podsieci 192.168.1.x dla komputera z kartą sieciową LAN bez innych kart sieciowych jak np:Wi-Fi**
 
