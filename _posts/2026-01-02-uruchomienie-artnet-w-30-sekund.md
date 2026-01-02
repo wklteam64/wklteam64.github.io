@@ -66,6 +66,18 @@ Jeżeli komputer ma więcej niż jedną kartę sieciową to należy się zorient
 
 Ten przykład konfiguracji jest opisany w poście: [Konfiguracja bramki Artnet PROMYK 3.xx z oprogramowaniem z ONYX OBSIDIAN](https://wklteam64.github.io/2025/12/20/onyx_obsidian_promyk.html)
 
-Filmy Instruktażowe dla konfiguracji bramki PROMYK 3.60 w podsieci 2.x.x.x:
+***Filmy Instruktażowe dla konfiguracji bramki PROMYK 3.60 w podsieci 2.x.x.x:***
 
-1. [Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows w podsieci 2.x.x.x](https://youtu.be/1oX1bX1F1jY?si=UeJX1Y6K4f8WQjvN)
+ * **konfiguracja qlc+ freestyler dot2 onpc z bramką Artnet Promyk 3.60 w Windows 11 adresacja 2.x.x.x/8**.Film omawia przykład konfiguracji bramki artnet dmx512 "Promyk 3.60" w adresacji natywnej primary ARTNET czyli 2.0.0.0/8. Ten poradnik jest specjalnie stworzony dla osób początkujących, które dopiero zaczynają przygodę z DMX512 albo z bramkami artnet. szczegóły dostępne są na stronie firmowej WKL Team64. [Poradnik Wideo](https://youtu.be/GQle8IkHLAk?si=_ALpDQYVaOFbzwEn)
+ * **Onyx obsidian 4.32 połączenie z bramką artnet PROMYK 3.xx adresacja natywna protokołu artnet win 11**  [Poradnik Wideo](https://www.youtube.com/watch?v=WJkzyEks0rM)
+  
+  **Podsumowanie:**
+  * Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund jest możliwe poprzez odpowiednie ustawienie adresu IP karty sieciowej komputera w tej samej podsieci co bramka.
+  * Sprawdzenie połączenia można wykonać za pomocą polecenia ping lub otwarcia strony konfiguracyjnej bramki w przeglądarce internetowej.
+  * W przypadku korzystania z wielu kart sieciowych, należy upewnić się, że adresy IP nie kolidują ze sobą.
+  * Po poprawnym uruchomieniu bramki, można ją skonfigurować w oprogramowaniu obsługującym protokół Artnet.
+  * Można ułatwić sobie pracę przy konfiguracji bramki PROMYK 3.60 korzystając z dostępnych poradników wideo przygotowanych przez WKL TEAM64 oraz dokumentacji dostępnej na stronie firmowej WKL TEAM64.
+  * W razie problemów z konfiguracją, warto skonsultować się z dokumentacją techniczną lub skontaktować się z pomocą techniczną WKL TEAM64.
+  * Dużą pomocą będzie program : https://www.lightjams.com/artnetominator/ który pozwala na śledzenie ruchu Artnet w sieci LAN, diagnozowanie problemów z komunikacją, wyświetalnie aktywnych Universe oraz wartości DMX przesyłanych do z bramki PROMYK 3.60 z aplikacji DMX512.
+  
+  
