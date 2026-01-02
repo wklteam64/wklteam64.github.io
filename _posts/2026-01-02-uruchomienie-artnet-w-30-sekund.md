@@ -51,6 +51,17 @@ Drugim sposobem na sprawdzenie połączenia jest otwarcie strony konfiguracyjnej
 
 >**UWAGA:** Strona konfiguracji bramki PROMYK 3.60 jeżeli bramka ma adres IP inny niż fabryczny to będzie dostępna pod adresem obecnym a nie fabrycznym, czyli jeżeli bramka ma adres IP 2.168.100.100 to strona konfiguracyjna będzie dostępna pod adresem http://2.168.100.100. **Częstym błędem jest próba otwarcia strony konfiguracyjnej pod adresem który nie jest aktualnym adresem IP bramki PROMYK 3.60, a także próby szukania jej w internecie. Ta strona nie jest dostępna w internecie, tylko lokalnie w sieci LAN, bo jest wyzwalana przez protokół HTTP z pamięci Flash urządzenia firmy WKL TEAM64.**
 
-Film instruktażowy pokazujący jak w 30 sekund uruchomić bramkę PROMYK 3.60 w podsieci 192.168.1.x w systemie Windows:
 
 [![Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows](https://wklteam64.github.io/img/yt.webp)](https://youtu.be/9C-LrO0mqXc?si=7ek54gqX0FarIBnd)
+
+Film instruktażowy pokazujący jak w 30 sekund uruchomić bramkę PROMYK 3.60 w podsieci 192.168.1.x w systemie Windows.
+
+**2. Przypadek konfiguracji w podsieci 2.x.x.x dla komputera z kartą sieciową LAN z innymi kartami sieciowymi jak np:Wi-Fi**.
+
+Jeżeli komputer ma więcej niż jedną kartę sieciową to należy się zorientować jakie adresy IP są używane przez inne karty sieciowe (np. Wi-Fi) i ustawić adres IP karty sieciowej LAN w innej podsieci niż używana przez inne karty sieciowe.
+
+>**UWAGA:** częstym błędem jest używanie przez inne karty sieciowe (np. Wi-Fi) adresów IP z podsieci **192.168.1.x** co koliduje z domyślnym adresem bramki PROMYK 3.60. Jeżeli ruter Wi-Fi używa adresów z podsieci 192.168.1.x to najprościej należy zmienić adres IP karty sieciowej LAN na inną podsieć np. **2.x.x.x** z maską podsieci **255.0.0.0**
+
+>**UWAGA:** Bramka PROMYK 3.60 w takim przypadku musi mieć zmieniony adres IP na inny niż fabryczny, np. **2.168.2.30** z maską podsieci **255.0.0.0**.
+
+Ten przykład konfiguracji jest opisany w poście: [Konfiguracja bramki Artnet PROMYK 3.xx z oprogramowaniem z ONYX OBSIDIAN](https://wklteam64.github.io/2025/12/20/onyx_obsidian_promyk.html)
