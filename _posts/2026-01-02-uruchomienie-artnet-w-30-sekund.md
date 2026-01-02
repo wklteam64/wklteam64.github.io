@@ -47,3 +47,6 @@ Jeżeli polecenie ping zakończy się sukcesem, oznacza to, że bramka PROMYK 3.
 
 Drugim sposobem na sprawdzenie połączenia jest otwarcie strony konfiguracyjnej bramki PROMYK 3.60 w przeglądarce internetowej pod adresem **192.168.1.30**, co potwierdzi, że bramka jest dostępna w sieci a także umożliwi podgląd jej ustawień konfiguracyjnych oraz zmianę tych ustawień w razie potrzeby.
 ![web-config](https://wklteam64.github.io/img/36konfFabric192168130.webp)
+**Rysunek nr 2: Strona konfiguracyjna bramki PROMYK 3.60 pod adresem fabrycznym 192.168.1.30**
+
+>**UWAGA:** Strona konfiguracji bramki PROMYK 3.60 jeżeli bramka ma adres IP inny niż fabryczny to będzie dostępna pod adresem obecnym a nie fabrycznym, czyli jeżeli bramka ma adres IP 2.168.100.100 to strona konfiguracyjna będzie dostępna pod adresem http://2.168.100.100. **Częstym błędem jest próba otwarcia strony konfiguracyjnej pod adresem który nie jest aktualnym adresem IP bramki PROMYK 3.60.**. 
