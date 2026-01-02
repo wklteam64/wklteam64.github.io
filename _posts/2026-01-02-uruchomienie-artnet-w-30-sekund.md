@@ -65,3 +65,7 @@ Jeżeli komputer ma więcej niż jedną kartę sieciową to należy się zorient
 >**UWAGA:** Bramka PROMYK 3.60 w takim przypadku musi mieć zmieniony adres IP na inny niż fabryczny, np. **2.168.2.30** z maską podsieci **255.0.0.0**.
 
 Ten przykład konfiguracji jest opisany w poście: [Konfiguracja bramki Artnet PROMYK 3.xx z oprogramowaniem z ONYX OBSIDIAN](https://wklteam64.github.io/2025/12/20/onyx_obsidian_promyk.html)
+
+Filmy Instruktażowe dla konfiguracji bramki PROMYK 3.60 w podsieci 2.x.x.x:
+
+1. [Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows w podsieci 2.x.x.x](https://youtu.be/1oX1bX1F1jY?si=UeJX1Y6K4f8WQjvN)
