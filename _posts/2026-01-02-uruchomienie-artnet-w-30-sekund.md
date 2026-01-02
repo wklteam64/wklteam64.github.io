@@ -25,7 +25,7 @@ W systemie Windows należy wejść w ustawienia karty sieciowej LAN i ustawić a
 
 Paremetry zatwierdzamy przyciskiem OK. Możemy teraz sprawdzić połączenie z bramką PROMYK 3.60 za pomocą polecenia ping w wierszu poleceń (cmd):
 
- ``` shell
+ ``` bash
   ping 192.168.1.30
   
 PING 192.168.1.30 (192.168.1.30) 56(84) bytes of data.
