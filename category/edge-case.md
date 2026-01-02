@@ -27,3 +27,4 @@ Urządzenie mobilne : tablet , smartfon (android , ios) także posiadają aplika
 
 
 * **Błędy diagnostyka naprawa sieci DMX512 (RS-485) wstęp do poradnika PDF** [poradnik Wideo](https://www.youtube.com/watch?v=yTfaqsQpJmk)
+* **Onyx obsidian 4.32 połączenie z bramką artnet PROMYK 3.xx adresacja natywna protokołu artnet windows 11**  [Poradnik Wideo](https://www.youtube.com/watch?v=WJkzyEks0rM)

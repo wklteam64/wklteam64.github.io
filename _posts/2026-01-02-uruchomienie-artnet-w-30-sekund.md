@@ -88,3 +88,4 @@ Ten przykład konfiguracji jest opisany w poście: [Konfiguracja bramki Artnet P
   * Bramka Artnet **PROMYK 3.60** jest przystępna cenowo, co czyni ją atrakcyjnym wyborem dla osób poszukujących ekonomicznego rozwiązania do przesyłania sygnałów DMX przez sieć Ethernet.
   * Bramki Artnet **PROMYK x.xx** są produktami powstającymi w Polsce i renomę uzyskały dzięki stabilności działania, prostocie obsługi oraz przystępnej cenie w porównaniu do konkurencyjnych rozwiązań. Uzyskały zaufanie zarówno wśród profesjonalistów jak i amatorów zajmujących się oświetleniem scenicznym bez sponsorowanych recenzji. 
   
+  **Instrukcje i dokumentacja techniczna bramki Artnet PROMYK 3.60 są dostępne na stronie firmowej WKL TEAM64 pod adresem: [https://wklteam64.github.io](https://wklteam64.github.io) oraz na stronie firmowej** [https://wklteam64.pl](https://wklteam64.pl) **w zakładce "do pobrania".**
