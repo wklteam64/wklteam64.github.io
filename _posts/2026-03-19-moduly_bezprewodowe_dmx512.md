@@ -22,5 +22,3 @@ Moduły bezprzewodowe DMX512 umożliwiają sterowanie oświetleniem scenicznym i
 
 ## Instalacja
 
-1. Podłączyć moduł nadajnika do konsoli oświetleniowej
-2. Umieścić moduł odbiornika w pobliżu urządzeń oświetleniowych
