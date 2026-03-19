@@ -4,11 +4,13 @@ title: Podłączenie modułów bezprzewodowych DMX512 do gniazda RDMX0 bramki Ar
 author: WKL TEAM64
 ---
 
-# Moduły Bezprzewodowe DMX512
+## Moduły Bezprzewodowe DMX512 czteroprzewodowe 
 
 ## Wprowadzenie
 
 Moduły bezprzewodowe DMX512 umożliwiają sterowanie oświetleniem scenicznym i efektami specjalnymi bez konieczności użycia kabli.
+
+![ipconfig okno ](https://wklteam64.github.io/radio-dmx-china.jpg)
 
 ## Charakterystyka
 
@@ -16,11 +18,9 @@ Moduły bezprzewodowe DMX512 umożliwiają sterowanie oświetleniem scenicznym i
 - **Zasięg**: do 100 metrów (w warunkach optymalnych)
 - **Częstotliwość**: 2.4 GHz
 - **Kanały**: do 512 kanałów DMX
+- **Opis żył**: +5V (czerwony), Gnd (czarny), dmx512 data+ (), dmx512 data- ()
 
 ## Instalacja
 
 1. Podłączyć moduł nadajnika do konsoli oświetleniowej
 2. Umieścić moduł odbiornika w pobliżu urządzeń oświetleniowych
-3. Zsynchronizować urządzenia za pomocą przycisku SYNC
-
-## Konfiguracja
