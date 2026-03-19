@@ -1,6 +1,8 @@
-
-
-
+---
+layout: post
+title: Podłączenie modułów bezprzewodowych DMX512 do gniazda RDMX0 bramki Artnet "PROMYK 3.60"
+author: WKL TEAM64
+---
 
 # Moduły Bezprzewodowe DMX512
 
