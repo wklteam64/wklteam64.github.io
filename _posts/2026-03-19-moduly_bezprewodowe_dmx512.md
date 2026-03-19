@@ -10,7 +10,7 @@ author: WKL TEAM64
 
 Moduły bezprzewodowe DMX512 umożliwiają sterowanie oświetleniem scenicznym i efektami specjalnymi bez konieczności użycia kabli.
 
-![ipconfig okno ](https://wklteam64.github.io/radio-dmx-china.jpg)
+![ipconfig okno ](https://wklteam64.github.io/img/radio-dmx-china.jpg)
 
 ## Charakterystyka
 
