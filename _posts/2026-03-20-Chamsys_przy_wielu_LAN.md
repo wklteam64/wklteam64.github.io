@@ -32,7 +32,7 @@ Do czasu gdy dołożymy ruter (coraz częstsze zdarzenie) z adresacją 192.168.1
 
 2. **zmiana adresu Promyka 3.60** na adres **2.168.1.30 /8** oraz zmiana adresu karty sieciowej LAN komputera na **2.0.0.1 /8**. Ta procedura jest opisana w instrukcji PROMYK 3.60, instrukcjach i filmie do których linki są tej stronie statycznej dokumentacji. 
 
-> Częstym błędeem jest wpisywanie tego samego adresu ip v4 bramki artnet do ustawień  karty LAN komputera.
+> Częstym błędem jest wpisywanie tego samego adresu ip v4 bramki artnet do ustawień  karty LAN komputera.
 ---
 Wydaje się że zmiana adresu IPv4 **2.x.x.x/8** od razu zapobiega takim zdarzeniom konfliktu dwóch sieci LAN o tej samej adresacji. Tak do końca nie jest. Są przypadki gdy jedna karta LAN ma już adres ipv4 2.0.0.1/8 a druga jeszcze nie ma żadnego, a użytkownik ma zamiar użyć drugiej bramki artnet bez np: switch'a. Wtedy ustawia np: 2.0.0.2/8 i okazuje się że wszystko przestaje działać. Wtedy powinien ustawić tą LAN nr 2 na adres np: **10.0.0.1/8** i zmienić adres Promyk 3.60 na np: **10.168.1.30/8**.
 
