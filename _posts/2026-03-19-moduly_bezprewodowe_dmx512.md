@@ -29,12 +29,12 @@ Dalej stwierdzenie **moduł radiowy** będzie odnosiło do tego konkretnie urzą
 - **TX/RX**
 - **pobór prądu**: 120-250mA w zależności od producenta
 
-![modul radiowy opis](../img/modRadioOpis.webp)
+![modul radiowy opis](https://wklteam64.github.io/img/modRadioOpis.webp)
 
 ## Instalacja
 
 Bramka Artnet PROMYK 3.60 posiada dwa wyjścia XLR-3 do podłączenia linii DMX512 oraz jedno RDX0 do podłączenia modułów radiowych. *W środku obudowy można zmieścić jeden moduł radiowy.* 
-![promyk 3.60 artnet bramka](../img/36-multiobudowa-6753241cb0c97.webp)
+![promyk 3.60 artnet bramka](https://wklteam64.github.io/img/36-multiobudowa-6753241cb0c97.webp)
 
 Złącze **RDX0** jest podłączone do **DX0** i posiada ten sam universe. Wyprowadzone linie zasilania **+5V i masa** na RDX0 stanowią jedyne źródło zasilania dla tego modułu i nie mogą być podłączane do innych miejsc w bramce ARTNET 3.60.
 ![modul radiowy złącze rdx0 W PROMYK 3.60](../img/36-rdmx0-plyta.webp)
@@ -44,11 +44,11 @@ Z zewnątrz można się dostać do złącza **RDX0** bez odkręcania obudowy prz
  * **górny**:  dla płaskiego wkrętaka do dokręcania czterech śrub mocujących przewody 
  * **dolny**: do wprowadzania przewodów
 
- ![OTWORY do złącza RDX0](../img/36-przod-tyl-gniazdo.webp) 
+ ![OTWORY do złącza RDX0](https://wklteam64.github.io/img/36-przod-tyl-gniazdo.webp) 
 
 Przykład modułu przyłączonego do złącza RDX0 w bramce ARTNET PROMYK 3.60 bez obudowy 
 
-![modul radiowy podłączony do promyk 3.60](../img/modRadioPromyk360.webp)
+![modul radiowy podłączony do promyk 3.60](https://wklteam64.github.io/img/modRadioPromyk360.webp)
 
 
 > **Do złącza można podłączyć jeden moduł radiowy**, nie można zrównoleglać kolejnych modułów. Urządzenie posiada bezpiecznik termiczny którego nieliniowa charakterystyka zaczyna się po przekroczeniu 0.5A i może zwiększyć rezystancję elementu wyłącząjąc urządzenie. Po ostygnięciu elementu urządzenie wróci do pracy.
