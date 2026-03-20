@@ -39,7 +39,7 @@ Wydaje się że zmiana adresu IPv4 **2.x.x.x/8** od razu zapobiega takim zdarzen
 ---
 
 
-## Instrukcje  
+## Instrukcje wspomniane w artykule 
 
 * https://wklteam64.github.io/2026/01/02/uruchomienie-artnet-w-30-sekund.html
 * https://wklteam64.github.io/category/edge-case.html video poradniki
