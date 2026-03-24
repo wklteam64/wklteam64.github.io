@@ -41,8 +41,8 @@ Złącze **RDX0** jest podłączone do **DX0** i posiada ten sam universe. Wypro
 
 Z zewnątrz można się dostać do złącza **RDX0** bez odkręcania obudowy przez dwa otwory:
 
- * **górny**:  dla płaskiego wkrętaka do dokręcania czterech śrub mocujących przewody 
- * **dolny**: do wprowadzania przewodów
+- **górny**:  dla płaskiego wkrętaka do dokręcania czterech śrub mocujących przewody 
+- **dolny**: do wprowadzania przewodów
 
  ![OTWORY do złącza RDX0](https://wklteam64.github.io/img/36-przod-tyl-gniazdo.webp) 
 
@@ -57,7 +57,7 @@ Przykład modułu przyłączonego do złącza RDX0 w bramce ARTNET PROMYK 3.60 b
 
 ## Materiały techniczne dla starszych wersji bramek Artnet "PROMYK"
 
-* **wersja 1.2**: [http://kwmatik.blogspot.com/2020/12/moduy-radiowe-dmx512-cz1-opis-moduu-i.html](http://kwmatik.blogspot.com/2020/12/moduy-radiowe-dmx512-cz1-opis-moduu-i.html)
-* **wersja 2.00**: [https://wklteam64.blogspot.com/2022/09/podaczenie-moduow-radiowych-dmx512-do.html](https://wklteam64.blogspot.com/2022/09/podaczenie-moduow-radiowych-dmx512-do.html)
-* **wersja 3.00 i 3.50** [https://wklteam64.blogspot.com/2024/01/przesyanie-bezprzewodowe-protokou.html](https://wklteam64.blogspot.com/2024/01/przesyanie-bezprzewodowe-protokou.html)
-
+- **wersja 1.2**: [http://kwmatik.blogspot.com/2020/12/moduy-radiowe-dmx512-cz1-opis-moduu-i.html](http://kwmatik.blogspot.com/2020/12/moduy-radiowe-dmx512-cz1-opis-moduu-i.html)
+- **wersja 2.00**: [https://wklteam64.blogspot.com/2022/09/podaczenie-moduow-radiowych-dmx512-do.html](https://wklteam64.blogspot.com/2022/09/podaczenie-moduow-radiowych-dmx512-do.html)
+- **wersja 3.00 i 3.50** [https://wklteam64.blogspot.com/2024/01/przesyanie-bezprzewodowe-protokou.html](https://wklteam64.blogspot.com/2024/01/przesyanie-bezprzewodowe-protokou.html)
+  
