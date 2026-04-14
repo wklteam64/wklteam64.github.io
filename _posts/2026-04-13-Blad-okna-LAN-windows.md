@@ -25,8 +25,16 @@ Przykład na obrazku dotyczy konfiguracji adresu IP dla ustawień fabrycznych br
 Przykład konfiguracji zaczyna się od 2:55
 
 [![Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows](https://wklteam64.github.io/img/yt.webp)](https://youtu.be/WJkzyEks0rM?si=frQuHU7rry48ImgK)
-
+ 
 W filmowym przykładzie pokazano jak skonfigurować bramkę ARTNET PROMYK 3.60 w systemie Windows dla sieci natywnej ARTNET, czyli 2.0.0.0/8, 
 
-![okno protokołu 2.0.0.0/8](https://wklteam64.github.io/WethKonf.webp)
+![okno protokołu 2.0.0.0/8](https://wklteam64.github.io/img/WethKonf.webp)
+
+Karta sieciowa  LAN komputera została skonfigurowana z adresem IP **2.0.0.2 z maską 255.0.0.0** w skrócie **2.0.0.2/8** a bramka ARTNET PROMYK 3.60 została skonfigurowana z adresem IP **2.168.1.30/8**. W ten sposób komputer i bramka są w tej samej podsieci i mogą się komunikować bez problemów.
+
+> Koncepcja strony konfiguracyjnej www bramki ARTNET PROMYK 3.60 jest taka że może służyć do zmiany konfiguracji urządzenia jak i sprawdzenia  czy urządzenie jest dostępne w sieci. Jeśli strona konfiguracyjna jest niedostępna to oznacza że bramka może nie być dostępna w sieci, co może być spowodowane błędną konfiguracją adresu IP karty sieciowej lub bramki, lub problemem z połączeniem sieciowym. Tak więc jeśli nie potrzebuje się zmieniać konfiguracji bramki i jednocześnie istnieje pewność poprawności konfiguracji można przejść od razu aplikacji DMX512 i tam to sprawdzić poprzez odbiór pakietów ARTNET. Jeśli aplikacja DMX512 nadaje pakiety na UNiverse zgodny z konfiguracją bramki to odpowiednio będzie to sygnalizowane diodami LED  na złączach DX0 i DX1.
+
+Oprócz tego można komend w **CMD** lub **PowerShell** użyć komendy **ipconfig** a potem **ping** do sprawdzenia czy bramka jest dostępna w sieci. Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **ping 2.168.1.30** w terminalu.
+
+![Ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
 
