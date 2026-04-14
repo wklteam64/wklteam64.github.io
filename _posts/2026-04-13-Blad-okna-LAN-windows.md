@@ -34,7 +34,10 @@ Karta sieciowa  LAN komputera została skonfigurowana z adresem IP **2.0.0.2 z m
 
 > Koncepcja strony konfiguracyjnej www bramki ARTNET PROMYK 3.60 jest taka że może służyć do zmiany konfiguracji urządzenia jak i sprawdzenia  czy urządzenie jest dostępne w sieci. Jeśli strona konfiguracyjna jest niedostępna to oznacza że bramka może nie być dostępna w sieci, co może być spowodowane błędną konfiguracją adresu IP karty sieciowej lub bramki, lub problemem z połączeniem sieciowym. Tak więc jeśli nie potrzebuje się zmieniać konfiguracji bramki i jednocześnie istnieje pewność poprawności konfiguracji można przejść od razu aplikacji DMX512 i tam to sprawdzić poprzez odbiór pakietów ARTNET. Jeśli aplikacja DMX512 nadaje pakiety na UNiverse zgodny z konfiguracją bramki to odpowiednio będzie to sygnalizowane diodami LED  na złączach DX0 i DX1.
 
-Oprócz tego można komend w **CMD** lub **PowerShell** użyć komendy **ipconfig** a potem **ping** do sprawdzenia czy bramka jest dostępna w sieci. Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **ping 2.168.1.30** w terminalu.
+Oprócz tego można komend w **CMD** lub **PowerShell** użyć komendy **ipconfig** a potem **ping** do sprawdzenia czy bramka jest dostępna w sieci. 
 
 ![Ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
 
+Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **ping 2.168.1.30** w terminalu.
+
+![ping 2.168.1.30](https://wklteam64.github.io/img/ping200.webp)
