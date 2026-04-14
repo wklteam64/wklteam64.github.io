@@ -18,3 +18,15 @@ Aby rozwiązać ten problem należy przejść do **"Centrum sieci i udostępnian
 
 ![okno protokolu](https://wklteam64.github.io/img/konfWlascIpv4a192168130.webp)
 
+Przykład na obrazku dotyczy konfiguracji adresu IP dla ustawień fabrycznych bramki ARTNET PROMYK 3.60, czyli adresu IP  192.168.1.30 maska 255.255.255.0 , Universe 0 w gnieździe DX0 i Universe 1 w gnieździe DX1.
+
+> Częstym błędem mimo sygnalizowania tego w instrukcjach jest wpisawanie adresu IP tego samego co bramka, czyli 192.168.1.30 zamiast 192.168.1.1 lub 192.168.1.2 w ustawieniach karty sieciowej. Należy pamiętać że adres IP karty sieciowej musi być inny niż adres IP bramki, ale musi być w tej samej podsieci, czyli 192.168.1.x gdzie x to liczba od 1 do 254 z wyłączeniem 30.
+
+Przykład konfiguracji zaczyna się od 2:55
+
+[![Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows](https://wklteam64.github.io/img/yt.webp)](https://youtu.be/WJkzyEks0rM?si=frQuHU7rry48ImgK)
+
+W filmowym przykładzie pokazano jak skonfigurować bramkę ARTNET PROMYK 3.60 w systemie Windows dla sieci natywnej ARTNET, czyli 2.0.0.0/8, 
+
+![okno protokołu 2.0.0.0/8](https://wklteam64.github.io/WethKonf.webp)
+
