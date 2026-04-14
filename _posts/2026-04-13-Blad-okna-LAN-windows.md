@@ -43,3 +43,9 @@ Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **p
 ![ping 2.168.1.30](https://wklteam64.github.io/img/ping200.webp)
 
 > Sens używania komend w **CMD** lub **PowerShell** jest taki że można szybko sprawdzić czy bramka jest dostępna w sieci.Jeśli ping zwraca odpowiedź, to oznacza że bramka jest dostępna i można przejść do dalszej konfiguracji lub testowania. Jeśli ping zwraca błąd, to oznacza że bramka może być niedostępna w sieci, co może być spowodowane błędną konfiguracją adresu IP karty sieciowej lub bramki, lub problemem z połączeniem sieciowym. Poza tym ta metoda jest szybsza niż szukanie informacji porzez okna WINDOWS i jest bardziej uniwersalna, ponieważ działa na wszystkich systemach operacyjnych WINDOWS, które obsługują protokół TCP/IP.
+
+## Podsumowanie
+
+Te informacje zawarte w tym artykule są ważne dla użytkowników, którzy mają problemy z konfiguracją bramki ARTNET PROMYK 3.60 w systemie Windows. Błąd w oknie "Edytowanie Ustawień protokołu IP" może być frustrujący, ale istnieje alternatywna metoda konfiguracji, która powinna działać poprawnie. Pamiętaj, że adres IP karty sieciowej musi być inny niż adres IP bramki, ale musi być w tej samej podsieci, aby komunikacja była możliwa. Jeśli masz problemy z dostępem do bramki, użyj komendy ping w terminalu, aby sprawdzić jej dostępność w sieci.
+
+> Jeśli równolegle do sieci LAN występuje połączenie Wi-Fi, to należy sprawdzić czy karta sieciowa WI-FI nie ma tej samej konfiguracji adresu IP co karta sieciowa LAN, ponieważ może to powodować konflikty i problemy z komunikacją. W takim przypadku należy zmienić konfigurację adresu IP karty sieciowej WI-FI lub samej karty LAN zmieniając adres IP również bramki artnet. 
