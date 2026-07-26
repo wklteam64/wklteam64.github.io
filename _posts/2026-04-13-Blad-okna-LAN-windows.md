@@ -12,7 +12,7 @@ Konfiguracja bramki ARTNET PROMYK 3.60 jest bardzo prosta i jest formalnością 
 
 Takim przykładem jest błąd w oknie **"Edytowanie Ustawień protokołu IP"**. Przyczyną tego błędu jest błąd Windowsa i należy przejść innego okna do konfiguracji protokołu IP.
 
-## Rozwiązanie problemu 
+## Rozwiązanie problemu
 
 Aby rozwiązać ten problem należy przejść do **"Centrum sieci i udostępniania"** i kliknąć w **"Zmień ustawienia karty sieciowej"**. Następnie należy kliknąć prawym przyciskiem myszy na kartę sieciową i wybrać **"Właściwości"**. W oknie właściwości należy znaleźć **"Protokół internetowy w wersji 4 (TCP/IPv4)"** i kliknąć na niego dwukrotnie. W ten sposób otworzy się okno konfiguracji protokołu IP, które powinno działać poprawnie.
 
@@ -25,8 +25,8 @@ Przykład na obrazku dotyczy konfiguracji adresu IP dla ustawień fabrycznych br
 Przykład konfiguracji zaczyna się od 2:55
 
 [![Uruchomienie bramki Artnet PROMYK 3.60 w 30 sekund w systemie Windows](https://wklteam64.github.io/img/yt.webp)](https://youtu.be/WJkzyEks0rM?si=frQuHU7rry48ImgK)
- 
-W filmowym przykładzie pokazano jak skonfigurować bramkę ARTNET PROMYK 3.60 w systemie Windows dla sieci natywnej ARTNET, czyli 2.0.0.0/8, 
+
+W filmowym przykładzie pokazano jak skonfigurować bramkę ARTNET PROMYK 3.60 w systemie Windows dla sieci natywnej ARTNET, czyli 2.0.0.0/8,
 
 ![okno protokołu 2.0.0.0/8](https://wklteam64.github.io/img/WethKonf.webp)
 
@@ -34,7 +34,7 @@ Karta sieciowa  LAN komputera została skonfigurowana z adresem IP **2.0.0.2 z m
 
 > Koncepcja strony konfiguracyjnej www bramki ARTNET PROMYK 3.60 jest taka że może służyć do zmiany konfiguracji urządzenia jak i sprawdzenia  czy urządzenie jest dostępne w sieci. Jeśli strona konfiguracyjna jest niedostępna to oznacza że bramka może nie być dostępna w sieci, co może być spowodowane błędną konfiguracją adresu IP karty sieciowej lub bramki, lub problemem z połączeniem sieciowym. Tak więc jeśli nie potrzebuje się zmieniać konfiguracji bramki i jednocześnie istnieje pewność poprawności konfiguracji można przejść od razu aplikacji DMX512 i tam to sprawdzić poprzez odbiór pakietów ARTNET. Jeśli aplikacja DMX512 nadaje pakiety na UNiverse zgodny z konfiguracją bramki to odpowiednio będzie to sygnalizowane diodami LED  na złączach DX0 i DX1.
 
-Oprócz tego w **CMD** lub **PowerShell** można użyć komendy **ipconfig** a potem **ping** do sprawdzenia czy bramka jest dostępna w sieci. 
+Oprócz tego w **CMD** lub **PowerShell** można użyć komendy **ipconfig** a potem **ping** do sprawdzenia czy bramka jest dostępna w sieci.
 
 ![Ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
 
@@ -48,4 +48,4 @@ Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **p
 
 Te informacje zawarte w tym artykule są ważne dla użytkowników, którzy mają problemy z konfiguracją bramki ARTNET PROMYK 3.60 w systemie Windows. Błąd w oknie "Edytowanie Ustawień protokołu IP" może być frustrujący, ale istnieje alternatywna metoda konfiguracji, która powinna działać poprawnie. Pamiętaj, że adres IP karty sieciowej musi być inny niż adres IP bramki, ale musi być w tej samej podsieci, aby komunikacja była możliwa. Jeśli masz problemy z dostępem do bramki, użyj komendy ping w terminalu, aby sprawdzić jej dostępność w sieci.
 
-> Jeśli równolegle do sieci LAN występuje połączenie Wi-Fi, to należy sprawdzić czy karta sieciowa WI-FI nie ma tej samej konfiguracji adresu IP co karta sieciowa LAN, ponieważ może to powodować konflikty i problemy z komunikacją. W takim przypadku należy zmienić konfigurację adresu IP karty sieciowej WI-FI lub samej karty LAN zmieniając adres IP również bramki artnet. 
+> Jeśli równolegle do sieci LAN występuje połączenie Wi-Fi, to należy sprawdzić czy karta sieciowa WI-FI nie ma tej samej konfiguracji adresu IP co karta sieciowa LAN, ponieważ może to powodować konflikty i problemy z komunikacją. W takim przypadku należy zmienić konfigurację adresu IP karty sieciowej WI-FI lub samej karty LAN zmieniając adres IP również bramki artnet.
