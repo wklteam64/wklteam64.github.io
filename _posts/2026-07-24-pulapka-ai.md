@@ -69,5 +69,42 @@ Jeśli korzystasz z drugiego portu **DX1**:
 ```
 
 I na końcu jest jeden błąd dioda status nie pokazuje pakietów Artnet i częstotliwość jej migania od tego nie zależy, szybkie miganie pokazuje że interfejs LAN do którego jest podłączony PROMYK jest podniesiony.  
+Jeżeli chodzi od podłączenie w scenariuszu podłączenia bramki artnet do karty sieciowej komputera bezpośrednio po wyjęciu z pudełka to można uznać za poprawne.
 
 
+### Przykład COPILOT 
+
+```shell
+Poniżej masz **konkretną, praktyczną instrukcję krok po kroku**, jak poprawnie skonfigurować **bramkę ArtNet PROMYK 3.60** z **QLC+**. Informacje są oparte na dokumentacji PROMYK 3.60 oraz oficjalnym opisie pluginu ArtNet w QLC+   [wklteam64.pl](https://www.wklteam64.pl/wp-content/uploads/2024/12/manual-promyk3_60.pdf)  [docs.qlcplus.org](https://docs.qlcplus.org/v4/plugins/art-net).
+
+---
+
+## Najważniejsze założenia konfiguracji
+**PROMYK 3.60** fabrycznie pracuje w sieci **192.168.1.x/24**.  
+**QLC+** wysyła ArtNet jako **UDP na port 6454**, domyślnie **broadcast 192.168.1.255**.  
+**QLC+ Universe 1 = ArtNet Universe 0** (ważne!)   [docs.qlcplus.org](https://docs.qlcplus.org/v4/plugins/art-net).
+
+---
+
+## Kompletny przewodnik konfiguracji
+
+
+
+
+
+**Sources:**   [wklteam64.pl](https://www.wklteam64.pl/wp-content/uploads/2024/12/manual-promyk3_60.pdf)  [docs.qlcplus.org](https://docs.qlcplus.org/v4/plugins/art-net)  [wklteam64.github.io](https://wklteam64.github.io/2026/03/20/Chamsys_przy_wielu_LAN.html)
+
+---
+
+## Podsumowanie
+Po wykonaniu powyższych kroków **PROMYK 3.60** powinien poprawnie odbierać dane ArtNet z **QLC+** i wysyłać je jako DMX512.  
+Najczęstsze błędy to: zła podsieć, zły Universe, broadcast zamiast unicast, konflikt adresów IP.
+
+---
+
+Jeśli chcesz, mogę przygotować **wersję dla dwóch bramek PROMYK**, **konfigurację przez router Wi‑Fi**, albo **diagnozę krok po kroku**, gdy coś nie działa.  
+Co chcesz zrobić dalej?
+
+```
+
+Tu też nie można się przyczepić.
