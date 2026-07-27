@@ -246,6 +246,12 @@ wmic nic get name, netconnectionstatus, speed
 ```
 Komendy wpisywane w **CMD (wiersz poleceń)** mają to zaletę że nie zmieniły się od windows 95 i o wiele szybciej uzyskuje się informację zamiast tracić czas na przeskakiwanie między oknami i co wersja windows to innymi.
 
+![Ipconfig](https://wklteam64.github.io/img/Wipcon.webp)
+przykład użycia komendy **ipconfig**
+
+
+![ping 2.168.1.30](https://wklteam64.github.io/img/ping200.webp)
+Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **ping 2.168.1.30** w terminalu.
 
 
 
