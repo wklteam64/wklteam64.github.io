@@ -185,6 +185,67 @@ Wejście w tryb 3 powoduje że PROMYK 3.60 :
 
 ### Przypadek istnienia kilku kart sieciowych na jednym komputerze
 
+Przy zadawaniu pytania o konfigurację użytkownik nie podaje faktu że posiada na komputarze oprócz karty LAN także karty WI-FI. Jeśli karta sieciowa LAN i WI-FI posiadają ten sam adres sieci np:
+
+> 192.168.1.1 ma LAN i 192.168.1.1 na WIfi to nie będzie prawidłowej komunikacji , pytanie do AI GEMINI : "jeżeli na karcie LAN mam adres 192.168.1.1 a na karcie wifi podłączonej do rutera mam sieć 192.168.1.0/24 to jak ustawić promyk "
+
+```shell
+W wierszu poleceń (CMD) masz do wyboru kilka poleceń, w zależności od tego, jak szczegółowych informacji potrzebujesz:
+
+---
+
+### 1. Szybka lista (podstawowe informacje i adresy IP)
+
+Najpopularniejsze polecenie, które wyświetli nazwy kart, ich adresy IP, maski i bramy domyślne:
+
+```cmd
+ipconfig
+
+```
+
+---
+
+### 2. Pełny profil kart (adresy MAC, serwery DNS, DHCP)
+
+Jeśli chcesz zobaczyć fizyczne adresy kart (MAC), status DHCP czy serwery DNS:
+
+```cmd
+ipconfig /all
+
+```
+
+---
+
+### 3. Zwięzła lista ze stanem połączenia
+
+Jeśli zależy Ci na czystym zestawieniu, które karty są fizycznie podłączone, a które wyłączone:
+
+```cmd
+netsh interface show interface
+
+```
+
+---
+
+### 4. Wyświetlenie informacji systemowych przez WMIC
+
+Aby sprawdzić dokładny model, nazwę sprzętową karty oraz jej identyfikator:
+
+```cmd
+wmic nic get name, netconnectionstatus, speed
+
+```
+
+*(W kolumnie `NetConnectionStatus` wartość **2** oznacza kartę połączoną, a **7** rozłączoną).*
+
+---
+
+> **Wskazówka do konfiguracji Art-Net:**
+> Używając `ipconfig /all`, upewnij się, że pod pozycją odpowiadającą Twojemu gniazdu Ethernet (LAN) widzisz ustawiony stały adres IP (np. `10.0.0.1`), a opcja **DHCP aktywne** wskazuje wartość **Nie**.
+
+```
+Komendy wpisywane w **CMD (wiersz poleceń)** mają to zaletę że nie zmieniły się od windows 95 i o wiele szybciej uzyskuje się informację zamiast tracić czas na przeskakiwanie między oknami i co wersja windows to innymi.
 
 
-.
+
+
