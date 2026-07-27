@@ -181,6 +181,10 @@ Wejście w tryb 3 powoduje że PROMYK 3.60 :
 * na złączu DX0 jest Universe nr 0 a DX1 Universe nr 1
 * adres strony konfiguracji (wpisywany do przeglądarki www) jest teraz taki sam adres bramki artnet **2.168.1.30** (a nie 192.168.1.30 bo w tym momencie urządzenie sieciowe takiego nie ma).
 * Ta konfiguracja jest opisana jako nietrwała i po wyłączeniu zasilania nie będzie zapamiętana. Aby **PROMYK 3.60** startował z tymi ustawieniami należy wejść w przeglądarkę www, wpisać adres 2.168.1.30 maska 8-bit i tą konfigurację zapisać .
-* Przycisk z tyłu urządzenia tej bramki 
+* Przycisk z tyłu urządzenia tej bramki służy oprócz resetu urządzenia do ustawień fabrycznych na stałe także do szybkiego przejścia do adresacji natywnej artnetu 2.x.x.x/8. Zakres tej sieci jest od 2.0.0.1 do 2.255.255.255. 
+
+### Przypadek istnienia kilku kart sieciowych na jednym komputerze
+
+
 
 .
