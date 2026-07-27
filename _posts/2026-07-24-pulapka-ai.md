@@ -107,4 +107,80 @@ Co chcesz zrobić dalej?
 
 ```
 
-Tu też nie można się przyczepić.
+Tu też nie można się przyczepić, ale zmiana pytania na ogólne już może dać inną odpowiedź:
+
+> jak podłączyć bramkę artnet w qlc+ ?
+
+```shell
+
+Podłączenie bramki Art-Net (konwertera Art-Net na DMX) w programie **QLC+ (QLight Controller Plus)** jest stosunkowo proste, ale wymaga prawidłowej konfiguracji sieciowej zarówno na komputerze, jak i na samym urządzeniu.
+
+Oto krótki przewodnik krok po kroku, który pozwoli Ci to szybko i bezboleśnie uruchomić.
+
+---
+
+## Krok 1: Konfiguracja sieciowa (Kluczowy krok!)
+
+Art-Net działa w sieci LAN, co oznacza, że Twój komputer i bramka Art-Net muszą znajdować się w tej samej podsieci.
+
+1. **Sprawdź IP bramki:** Większość bramek Art-Net ma domyślny adres IP zaczynający się od `2.x.x.x` lub `10.x.x.x` (np. `2.0.0.10`) z maską podsieci `255.0.0.0`.
+2. **Skonfiguruj kartę sieciową w komputerze:**
+* Wejdź w ustawienia karty sieciowej (Ethernet lub Wi-Fi, w zależności od tego, jak podłączasz bramkę).
+* Ustaw **statyczny adres IP** (np. jeśli bramka ma `2.0.0.10`, Ty ustaw dla komputera `2.0.0.1`).
+* Maskę podsieci ustaw na `255.0.0.0`.
+
+
+
+> 💡 **Wskazówka:** Jeśli Twoja bramka pozwala na pracę w standardowej sieci domowej (np. `192.168.1.x` z maską `255.255.255.0`), możesz ją tak skonfigurować – ważne, aby komputer i bramka "widziały się" nawzajem (możesz to sprawdzić, wpisując w terminalu/wierszu poleceń `ping [adres_IP_bramki]`).
+
+---
+
+## Krok 2: Konfiguracja wejść/wyjść w QLC+
+
+Po przygotowaniu sieci czas na konfigurację w samym programie QLC+.
+
+1. Otwórz QLC+ i przejdź do zakładki **Wejścia/Wyjścia** (Input/Output) na dole ekranu.
+2. W panelu po lewej stronie zobaczysz listę Twoich przestrzeni adresowych (**Universes** / Wszechświaty). Wybierz ten, który chcesz wysłać do bramki (najczęściej **Universe 1**).
+3. W prawym panelu zobaczysz listę dostępnych interfejsów i protokołów. Znajdź pozycję o nazwie **ArtNet**.
+4. Rozwiń listę interfejsów ArtNet. Zobaczysz tam dostępne adresy IP Twojego komputera.
+5. Zaznacz pole w kolumnie **Wyjście** (Output) przy odpowiednim adresie IP (tym, który jest w tej samej sieci co bramka).
+
+---
+
+## Krok 3: Przypisanie bramki i Universe (Właściwości wtyczki)
+
+Gdy zaznaczysz wyjście ArtNet, musisz upewnić się, że sygnał trafia w odpowiednie miejsce.
+
+1. Kliknij na wiersz z wybranym interfejsem ArtNet, a następnie kliknij ikonę **koła zębatego** (Właściwości / Configure IP plugin) na górze panelu po prawej stronie.
+2. Otworzy się okno konfiguracji wtyczki Art-Net:
+* **Output IP Address (Adres IP odbiorcy):** Możesz wybrać konkretny adres IP swojej bramki (tryb *Unicast* – zalecany, stabilniejszy) lub adres rozgłoszeniowy (tryb *Broadcast*, np. `2.255.255.255` – wysyła sygnał do wszystkich urządzeń w sieci).
+* **ArtNet Universe:** Upewnij się, że Universe w QLC+ odpowiada Universe ustawionemu na fizycznej bramce (często domyślnie jest to `0` lub `1`). *Uwaga: W standardzie Art-Net universes liczy się zazwyczaj od 0, natomiast w QLC+ od 1. Zazwyczaj Universe 1 w QLC+ odpowiada Universe 0 w bramce.*
+* **Transmission Mode:** Wybierz standardowy tryb pracy (zazwyczaj *Standard* lub *LTP* w zależności od potrzeb).
+
+
+3. Kliknij **OK**.
+
+---
+
+## Krok 4: Test połączenia
+
+Aby upewnić się, że wszystko działa:
+
+1. Przejdź do zakładki **Wirtualna Konsola** (Virtual Console) lub **Urządzenia** (Fixtures).
+2. Dodaj proste urządzenie (np. zwykły dimmer lub reflektor RGB) przypisane do Universe 1.
+3. Spróbuj zmienić wartość suwaka (DMX ch). Jeśli dioda sygnalizacyjna na Twojej bramce Art-Net (zazwyczaj opisana jako *DMX*, *Data* lub *Link*) zacznie mrugać, oznacza to, że bramka prawidłowo odbiera sygnał z QLC+.
+
+Masz już wszystko spięte w jedną sieć? Jeśli napotkasz problem z brakiem reakcji bramki, daj znać – najczęściej to kwestia drobnego błędu w adresacji IP lub numeracji Universe!
+
+```
+
+Co przeważnie w tym momencie robi początkujący? Ustawia adres karty sieciowej komputera na 2.0.0.1 z maską 255.0.0.0 i próbuje się połączyć z PROMYKIEM 3.60, którego adres fabryczny jest 192.168.1.30 z maską 255.255.255.0 co kończy się niepowodzeniem. W instrucji tej bramki artnet na stronie 7 w tabel nr 1 podano tryby pracy które można zmienić za pomocą przycisku z tyłu. 
+Wejście w tryb 3 powoduje że PROMYK 3.60 :
+
+* uzyskuje adres **2.168.1.30** i maskę **255.0.0.0**
+* na złączu DX0 jest Universe nr 0 a DX1 Universe nr 1
+* adres strony konfiguracji (wpisywany do przeglądarki www) jest teraz taki sam adres bramki artnet **2.168.1.30** (a nie 192.168.1.30 bo w tym momencie urządzenie sieciowe takiego nie ma).
+* Ta konfiguracja jest opisana jako nietrwała i po wyłączeniu zasilania nie będzie zapamiętana. Aby **PROMYK 3.60** startował z tymi ustawieniami należy wejść w przeglądarkę www, wpisać adres 2.168.1.30 maska 8-bit i tą konfigurację zapisać .
+* Przycisk z tyłu urządzenia tej bramki 
+
+.
