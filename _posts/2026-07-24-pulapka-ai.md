@@ -253,5 +253,8 @@ przykład użycia komendy **ipconfig**
 ![ping 2.168.1.30](https://wklteam64.github.io/img/ping200.webp)
 Na przykład, jeśli bramka ma adres IP 2.168.1.30, to można użyć komendy **ping 2.168.1.30** w terminalu.
 
+### Podsumowanie
+
+Podane przykłady pokazują, że jednak warto zacząć od instrukcji niż automatycznie bezwiedzowo wpisywać zapytania. 
 
 
